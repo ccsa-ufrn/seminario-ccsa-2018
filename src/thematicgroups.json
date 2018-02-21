@@ -1,0 +1,229 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "name": "TURISMO",
+            "tgs": [
+                {
+                    "name": "Gestão em Turismo",
+                    "syllabus": "Competitividade Turística de Destinos e Organizações; Redes e Alianças Estratégicas; Marketing Turístico; Comunicação e Promoção Turística; Gestão da Qualidade dos Serviços Turísticos; Planejamento e Gestão em Turismo.",
+                    "coordinators": "Lissa Valéria, Leilianne Barreto, Luiz Mendes e Mauro Lemuel"
+                },
+                {
+                    "name": "Planejamento e Organização do Turismo",
+                    "syllabus": "Turismo, governança e governabilidade. Participação Popular e as Políticas Públicas de Turismo. Teoria do Planejamento Turístico. Planejamento e Organização do Turismo. Planejamento e Segmentação Turística.",
+                    "coordinators": "Kerlei Sonaglio, Rosana Mazaro, Andrea Virgínia e José Eneas"
+                },
+                {
+                    "name": "Hospitalidade, Lazer e Eventos",
+                    "syllabus": "Aspectos gerais da hospitalidade. Hospitalidade e Turismo. Hospitalidade em meios de hospedagem. Hospitalidade em equipamentos de alimentação. Estudos do lazer. Práticas de lazer em destinos turísticos. Lazer e entretenimento como atrações turísticas. O lúdico e o bem-estar social. Eventos: planejamento e organização. Impactos e importância dos eventos nos destinos turísticos. Cerimonial e protocolo. Eventos temáticos. Hospitalidade em eventos.",
+                    "coordinators": "Ricardo Lanzarini, Mayara Ferreira e Michel Vieira"
+                }
+            ]
+        },
+        {
+            "name": "CIÊNCIAS DA INFORMAÇÃO",
+            "tgs": [
+                {
+                    "name": "Estudos Históricos e Epistemológicos da Biblioteconomia e da Ciência da Informação",
+                    "syllabus": "Estudos Históricos e Epistemológicos da Biblioteconomia e da Ciência da Informação. Constituição do campo científico e discussões sobre o objeto de estudo da Biblioteconomia e da Ciência da Informação. Reflexões sobre disciplinaridade, interdisciplinaridade e transdisciplinaridade, assim como a construção do conhecimento na área. Estudos sobre perfil, formação, competências profissionais e mercado de trabalho. Teóricos e teorias da Biblioteconomia e da Ciência da Informação.",
+                    "coordinators": "Gabrielle Tanus, Antônia Neta, Francisco Araújo"
+                },
+                {
+                    "name": "Gestão da Informação e Conhecimento",
+                    "syllabus": "Gestão de ambientes, sistemas, unidades, serviços e produtos de informação. Curadoria de conteúdos. Estudos de fluxos, processos, uso e usuários da informação como instrumentos de gestão. Gestão do conhecimento, aprendizagem organizacional e redes sociais. Marketing da informação. Monitoramento ambiental e inteligência competitiva. Gestão documental. Segurança da informação. Empreendedorismo informacional.",
+                    "coordinators": "Andréa Carvalho, Luciana Moreira, Pedro Neto"
+                },
+                {
+                    "name": "Informação, Tecnologia e Mediação",
+                    "syllabus": "Planejamento, implantação e avaliação de produtos e serviços de informação. Redes, recursos e fontes de informação. Estudo dos processos e das relações entre mediação, circulação e apropriação de informações, em diferentes contextos. Tecnologias de Informação e Comunicação. Redes sociais. Repositórios digitais. Curadoria de conteúdos. Arquitetura da informação.",
+                    "coordinators": "Fernando Vechiato, Andréa Carvalho, Luciana Moreira"
+                },
+                {
+                    "name": "Organização e Representação do Conhecimento",
+                    "syllabus": "Teorias, metodologias e práticas relacionadas à organização e representação de documentos e da informação em ambiências informacionais, tais como: arquivos, bibliotecas, museus e centros de documentação. Compreende estudos relacionados aos processos, produtos e instrumentos de representação do conhecimento bem como estudos de análise da informação.",
+                    "coordinators": "Francisco Araújo, Jacqueline Souza, Monica Marques, Nadia Vanti"
+                },
+                {
+                    "name": "Informação e Sociedade",
+                    "syllabus": "Políticas de informação e suas expressões em diferentes campos. Sociedade da informação. Informação, Estado e governo. Propriedade intelectual. Acesso à informação. Economia política da informação e da comunicação; produção colaborativa. Informação, conhecimento e inovação. Inclusão informacional e inclusão digital. Ética e informação. Informação e meio ambiente.",
+                    "coordinators": "Luciana Moreira, Gabrielle Tanus, Pedro Neto"
+                },
+                {
+                    "name": "Produção Científica e Estudos Métricos da Informação",
+                    "syllabus": "Produção, comunicação e uso da informação em Ciência, Tecnologia e Inovação. Métodos de avaliação: Bibliometria, Cientometria, Informetria, Webometria, Cibermetria, Altmetria, Arquivometria. Repositórios digitais. Movimento Open Access. Ciência aberta.",
+                    "coordinators": "Nadia Vanti, Fernando Vechiato"
+                }
+                
+            ]
+        },
+        {
+            "name": "CIÊNCIAS CONTÁBEIS",
+            "tgs": [
+                {
+                    "name": "Controladoria",
+                    "syllabus": "Sistemas de Informação, Controles de Gestão, Custos, Custeio da Qualidade, orçamento empresarial, Avaliação de desempenho, informação de custo e qualidade do gasto público.",
+                    "coordinators": "Adilson Tavares, Alexandro Barbosa, Maxwell dos Santos Celestino"
+                },
+                {
+                    "name": "Contabilidade para Usuários Externos",
+                    "syllabus": "Contabilidade Societária, IFRS, Tributação, Auditoria e Perícia Contábil, Educação Fiscal, Contabilidade Pública e Governamental.",
+                    "coordinators": "Clayton Levy"
+                },
+                {
+                    "name": "Educação e Pesquisa em Contabilidade",
+                    "syllabus": "Formação do Contador; Processo de ensino-aprendizagem; Estilos e Estratégias de Aprendizagem em Ciências Contábeis; Avaliação de aprendizagem; Tecnologia da Educação: Educação online; metodos de pesquisa qualitativa e quantitativa em contabilidade; Perfil e Evolução do egresso; Expectativas de mercado e do curso de Ciências Contábeis; Avaliação de programas educacionais.",
+                    "coordinators": "Aneide Oliveira Araujo, Edmilson Jovino"
+                },
+                {
+                    "name": "Contabilidade, Controle Interno e Auditoria aplicados ao setor público",
+                    "syllabus": "Sem conteúdo cadastrado.",
+                    "coordinators": "Victor Branco de Holanda"
+                }
+                
+            ]
+        },
+        {
+            "name": "SERVIÇO SOCIAL",
+            "tgs": [
+                {
+                    "name": "Questão Social, Política Social e Serviço Social",
+                    "syllabus": "Estudos e pesquisas sobre a Questão Social e suas expressões; Análise de políticas sociais – sua gênese e desenvolvimento e a inserção profissional do Serviço Social nos processos de formulação.",
+                    "coordinators": "Anna Luiza Lopes Liberato Alexandre Freire, Edla Hoffmann, Eliana Andrade da Silva, Ilena Felipe Barros, Iris Maria de Oliveira, Larisse de Oliveira Rodrigues, Roberto Marinho Alves da Silva e Rosângela Alves de Oliveira"
+                },
+                {
+                    "name": "Direitos Humanos, Diversidade Humana e Serviço Social",
+                    "syllabus": "Consiste num espaço de socialização de estudos e pesquisas na área de Serviço Social e áreas afins, e tem como principal objetivo contribuir com a reflexão crítica sobre os processos de violação dos direitos humanos na sociedade capitalista, considerando a diversidade humana em suas diferentes expressões: gênero; identidade de gênero; raça-etnia; orientação sexual.",
+                    "coordinators": "Maria Ilidiana Diniz, Miriam de Oliveira Inácio, Rita de Lourdes de Lima, Silvana Mara de Morais dos Santos e Tibério Lima Oliveira"
+                },
+                {
+                    "name": "Questão Urbana Agrária, Ambiental, Movimentos Sociais e Serviço Social",
+                    "syllabus": "Consiste num espaço de socialização de estudos e pesquisas na área de Serviço Social e áreas afins e tem como principal objetivo a contribuição à reflexão crítica de pesquisas que estudam as seguintes temáticas: Propriedade privada da terra, trabalho e formas de produção e reprodução capitalista.",
+                    "coordinators": "Andréa Lima da Silva, Daniela Neves de Sousa e Ilka de Lima Souza"
+                }
+                
+            ]
+        },
+        {
+            "name": "ECONOMIA",
+            "tgs": [
+                {
+                    "name": "Análise Econômica Multissetorial, Estratégica e Conjuntural",
+                    "syllabus": "Estudo das relações entre as atividades econômicas, o qual é realizado por meio de modelos multissetoriais, e das consequências dessas inter-relações para a análise de um espaço econômico específico, seja um espaço nacional ou subnacional. Estimativas de matrizes insumo-produto, nacional e/ou estadual. Análise das relações econômicas intersetoriais para o espaço nacional, regional ou estadual. Análise conjuntural e estudos de análise estratégica para o Brasil tipicamente relacionada a médios e longos prazos. Modelos de consistência entre fluxos e estoques (stock-flow consistent - SFC) e modelos macroeconômicos em geral.",
+                    "coordinators": "André Luís Cabral Lourenço, Denílson da Silva Araújo, Fabrício Pitombo Leite, Márcia Maria de Oliveira Bezerra e William Eufrasio Nunes Pereira"
+                },
+                {
+                    "name": "Desenvolvimento Econômico",
+                    "syllabus": "Discutir as contribuições teóricas e de políticas que analisem o desenvolvimento nas diversas vertentes do pensamento econômico, priorizando as questões macroeconômicas.",
+                    "coordinators": "André Luís Cabral Lourenço, Denílson da Silva Araújo, Márcia Maria de Oliveira Bezerra, William Eufrasio Nunes Pereira e Marconi Gomes da Silva"
+                },
+                {
+                    "name": "Grupo Interdisciplinar de Estudos e Avaliação de Políticas Públicas (GIAPP)",
+                    "syllabus": "As contribuições acadêmicas sobre avaliação e análise de políticas públicas, inclusive: avaliação de produtos, efeitos e impactos das diversas políticas como saúde, educação, agricultura, assistência social etc.",
+                    "coordinators": "João Matos Filho e Lincoln Moraes de Souza"
+                },
+                {
+                    "name": "Estudos e Pesquisas em Espaço, Trabalho, Inovação e Sustentabilidade",
+                    "syllabus": "Discutir questões teóricas e políticas da economia regional e urbana, priorizando as questões do trabalho, da inovação e da sustentabilidade nesses espaços.",
+                    "coordinators": "Denílson da Silva Araújo, Luziene Dantas de Macedo, William Eufrasio Nunes Pereira, Marconi Gomes da Silva, Maria Lussieu da Silva, Valdênia Apolinário"
+                },
+                {
+                    "name": "Métodos Quantitativos Aplicados à Economia",
+                    "syllabus": "Discutir as contribuições metodológicas quantitativas aplicadas à Economia. Neste caso, pretende-se analisar temas como saúde, educação, criminalidade, crescimento econômico, integração de mercados etc., utilizando ferramentas estatísticas, matemáticas e econométricas que têm sido aplicadas na literatura nacional e internacional, a fim de trazer contribuições ao desenvolvimento regional.",
+                    "coordinators": "João Paulo Martins Guedes, Diego de Maria André, Igor Ezio Maciel Silva e Janaína da Silva Alves"
+                }
+                
+            ]
+        },
+        {
+            "name": "DIREITO PRIVADO E PÚBLICO",
+            "tgs": [
+                {
+                    "name": "Direitos Fundamentais e interpretação constitucional",
+                    "syllabus": "Teoria geral dos direitos fundamentais. Eficácia e aplicabilidade dos direitos fundamentais. Direitos individuais e coletivos previstos na Constituição Federal e nas Constituições estaduais. Direitos e garantias constitucionais no Processo Penal. Direito Civil Constitucional. Direitos fundamentais previstos na Convenção Internacional sobre os Direitos das Pessoas com Deficiência. Teorias da interpretação constitucional e seus desafios. Avaliação crítica das decisões do Supremo Tribunal Federal e dos Tribunais de Justiça em matéria de direitos fundamentais. Concretização de direitos fundamentais via controle difuso de constitucionalidade. Princípio da proporcionalidade. Princípios e regras na argumentação jurídica das Cortes Constitucionais. Direito Constitucional Comparado.",
+                    "coordinators": "Leonardo Martins, Fabiano André de Souza Mendonça, Fabrízia Pessoa Serafim, Jone Fagner Rafael Maciel, Pedro de Oliveira Alves, Suzana Cecília Cortês de Araújo e Silva."
+                },
+                {
+                    "name": "Direito Administrativo, Direitos Fundamentais e Políticas Públicas",
+                    "syllabus": "Trata-se de Grupo de Trabalho, vinculado ao Grupo de Pesquisa Direito Administrativo Brasileiro, que tem por objetivo viabilizar a reflexão sobre temas da Dogmática Jurídica (Ciência do Direito em sentido estrito) associados à Administração Pública e ao papel desta na concretização de direitos fundamentais ou de políticas públicas.",
+                    "coordinators": "Vladimir da Rocha França"
+                },
+                {
+                    "name": "Direito, Linguagem e Sociedade",
+                    "syllabus": "O objetivo do presente grupo de trabalho é discutir as relações entre Direito e Linguagem em seus variados aspectos a partir de múltiplas perspectivas teóricas, tendo em vista o aspecto social dessa inter-relação. Modernamente cresce a percepção de que o exercício democrático do Direito não significa apenas ter acesso aos meios institucionais ligados ao sistema de justiça estatal, mas também compreender esses meios, o que implica no acesso, claridade e compreensão da linguagem jurídica. Interessa especialmente trabalhos que discutam: a) aspectos epistemológicos e teóricos gerais ligados ao Direito e à Linguagem (Teoria e Filosofia do Direito, e Ciências da Linguagem); b) argumentação e hermenêutica jurídica; c) a linguagem jurídica e seus gêneros (Linguística e Dogmática Jurídica); d) direito, linguagem e práticas sociais/ acesso à justiça.",
+                    "coordinators": "Anderson Souza da Silva Lanzillo"
+                },
+                {
+                    "name": "Direito e Regulação dos Recursos Naturais e da Energia",
+                    "syllabus": "Direito dos Recursos Hídricos: princípios hídricos constitucionais, política nacional dos recursos hídricos, usuário-pagador, atribuições e competências, conflitos.",
+                    "coordinators": "Yanko Marcius de Alencar Xavier, Patrícia Borba Vilar Guimarães, Fabricio Gemano Alves, Anderson da Silva Lanzillo"
+                }
+            ]
+        },
+        {
+            "name": "CIÊNCIAS ADMINISTRATIVAS",
+            "tgs": [
+                {
+                    "name": "Estratégias Políticas de Gestão",
+                    "syllabus": "Aprendizagem organizacional; Dinâmica de sistemas; Pensamento sistêm co; Modelagem de negócios; Simulação empresarial; Jogos de empresas; Aspectos Teóricos e Metodológicos da Vantagem Competitiva.",
+                    "coordinators": "Miguel Eduardo Moreno Añez e Maxwell dos Santos Celestino"
+                },
+                {
+                    "name": "Desafios da Implementação da Administração Estratégica nas Organizações",
+                    "syllabus": "A complexidade estrutural das organizações em nível planetário envolvendo o ritmo acelerado das mudanças tanto na",
+                    "coordinators": "Vidal Sunción Infante"
+                },
+                {
+                    "name": "Gestão de Sistemas e Tecnologia da Informação",
+                    "syllabus": "Governo Eletrônico e Tecnologia da Informação em Organizações Não Governamentais;Aspectos Socioambientais de SI/TI.",
+                    "coordinators": "Anatália Saraiva Martins Ramos"
+                },
+                {
+                    "name": "Gestão de Pessoas e Comportamento Organizacional",
+                    "syllabus": "Discutir as políticas e práticas de gestão de pessoas e os processos de comportamento organizacional no âmbito individual, grupal e organizacional e suas interfaces com o desenvolvimento das organizações.",
+                    "coordinators": "Patrícia Whebber Souza de Oliveira"
+                },
+                {
+                    "name": "Gestão Social, Reforma Agrária e Desenvolvimento Territorial",
+                    "syllabus": "Trata-se de grupo de trabalho destinado à discussão de processos e tendências do campo da Gestão Social, incluindo o universo das organizações do Terceiro Setor (não-governamentais, cooperativas, associações, grupos de trabalho e produção informais), além de temas específicos de estágios da reforma agrária e do desenvolvimento territorial no Rio Grande do Norte e no Brasil.",
+                    "coordinators": "Washington Souza, Pâmela Brandão"
+                },
+                {
+                    "name": "Inovação na Gestão Pública",
+                    "syllabus": "Discutir trabalhos que abordem as inovações no campo da gestão pública e das políticas públicas, contribuindo para a disseminação das boas práticas e, com isso, com o fortalecimento do setor público e a melhoria nos serviços ofertados à população.",
+                    "coordinators": "Hironobu Sano, Lilian Sumiya"
+                },
+                {
+                    "name": "Marketing",
+                    "syllabus": "Administração de Marketing. Marketing no Século XXI como ferramenta pedagógica no contexto educacional. Marketing em áreas especiais. Gerenciamento do processo de marketing, marketing virtual e inteligência competitiva.",
+                    "coordinators": "Thelma Pignataro"
+                },
+                {
+                    "name": "Condições de Trabalho e Saúde do Trabalhador",
+                    "syllabus": "Condições de trabalho e sua relação com a saúde do trabalhador; qualidade de vida no trabalho.",
+                    "coordinators": "Maria Teresa Pires Costa, Antônio Alves Filho"
+                },
+                {
+                    "name": "Métodos Quantitativos para Avaliação de Políticas",
+                    "syllabus": "Discutir trabalhos que abordem a aplicação de métodos quantitativos para a avaliação de políticas em diversas áreas, tais como: empreendedorismo, saúde, educação, saneamento básico. Pretende-se estimular o debate sobre contribuições gerenciais a partir de análises de eficiência, avaliações de impacto, entre outros.",
+                    "coordinators": "Anne Carvalho, Raquel Sampaio, Luciano Sampaio"
+                },
+                {
+                    "name": "Operações, Logística e Gestão de Materiais",
+                    "syllabus": "Discutir estratégias e práticas aplicáveis a sistemas de produção; gestão de qualidade e produtividade; filosofia lean; operações sustentáveis; gestão da cadeia de suprimentos; estratégias de transporte e localização; operadores logísticos; gestão de estoques; movimentação e armazenagem de materiais; aquisições; desenvolvimento, seleção e avaliação de fornecedores; entre outros temas correlatos que possam contribuir para o aperfeiçoamento da área nos setores público e privado.",
+                    "coordinators": "Anne Carvalho, Carlos Alberto Medeiros, Carlos Feitor e Luciano Sampaio"
+                }
+            ]
+        },
+        {
+            "name": "TRANSDISCIPLINAR",
+            "tgs": [
+                {
+                    "name": "Casos para Ensino",
+                    "syllabus": "A apresentação do caso refere-se ao relato descritivo da situação e do problema a…podendo a critério do autor se subdividir. Uma boa apresentação do caso deve apresentar: uma introdução definindo o problema a ser investigado e…que requeiram análise para resolver uma questão específica.",
+                    "coordinators": "Maria Váleria Pereira de Araújo e Pâmela de Medeiros Brandão"
+                }
+            ]
+        }
+    ]
+}
