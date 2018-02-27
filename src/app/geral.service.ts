@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, URLSearchParams } from '@angular/http';
+import { Http, URLSearchParams, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/Rx';
 
@@ -35,7 +35,8 @@ export class GeralService {
   }
 
   public getNews(): Observable<Array<News>> {
-      return this._http.get(`${this.host}/api/news/all`)
+      return this._http
+        .get('http://localhost:3000/api/event/5a70ca268f5fc344c2cac32d/news/all')
         .map((res: any) => { return res.json().data });
   }
 

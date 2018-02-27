@@ -44,11 +44,11 @@
                         CONTATO
                 </a> -->
 
-        <!-- <a class="login" tabindex="0" (click)="_toggleNewsModal('#s-comment')" (keypress.enter)="_toggleNewsModal('#s-comment')"
+        <a class="login" tabindex="0" (click)="_toggleNewsModal('#s-comment')" (keypress.enter)="_toggleNewsModal('#s-comment')"
           style="cursor:pointer;float: right; display: block; padding: 10px; padding-top: 14px;
                     height: 40px; margin-right: 10px;">
                         NOTÍCIAS
-                </a> -->
+                </a>
 
         <!-- <a class="login" tabindex="0" href="http://www.seminario2016.ccsa.ufrn.br" target="_blank" style="cursor:pointer;float: right; display: block; padding: 10px; padding-top: 14px;
                     height: 40px; margin-right: 10px;">
@@ -197,8 +197,8 @@
       <carousel (openModal)="abrirUmaNoticia($event)" ></carousel>
 
     </div>
-  </section> -->
-<!--
+  </section>
+
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -503,8 +503,8 @@
 
       <ul>
         <li *ngFor="let n of _allNews">
-          <h1>{{ n.title }}</h1>
-          <p [innerHTML]="n.text"></p>
+          <h1>{{ n.data.title }}</h1>
+          <p [innerHTML]="n.data.text"></p>
         </li>
       </ul>
 

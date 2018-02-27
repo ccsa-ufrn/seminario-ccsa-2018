@@ -111,19 +111,20 @@ export class AppComponent implements OnInit {
         this._geralService.getNews()
         .subscribe((news: Array<News>) => {
             if(news.length > 0) {
-                this._markedNews = Object.assign({}, news[0]);
+                // this._markedNews = Object.assign({}, news[0]);
 
-                if(this._markedNews)
-                this._markedNews.text =
-                    this._markedNews.text.substring(0, 200)+'...';
+                // if(this._markedNews)
+                // this._markedNews.text =
+                //     this._markedNews.text.substring(0, 200)+'...';
 
-                if(news[1]) this._othersNews.push(Object.assign({}, news[1]));
-                if(news[2]) this._othersNews.push(Object.assign({}, news[2]));
+                // if(news[1]) this._othersNews.push(Object.assign({}, news[1]));
+                // if(news[2]) this._othersNews.push(Object.assign({}, news[2]));
 
-                for(let i = 0; i < this._othersNews.length; ++i)
-                    this._othersNews[i].text = this._othersNews[i].text.substring(0, 260)+'...';
+                // for(let i = 0; i < this._othersNews.length; ++i)
+                //     this._othersNews[i].text = this._othersNews[i].text.substring(0, 260)+'...';
 
                 this._allNews = news;
+                console.log(this._allNews);
             }
         })
 
