@@ -167,7 +167,12 @@
                     "name": "Judiciário, Profissões Jurídicas e Democracia",
                     "syllabus": "O Brasil vivencia desde 2016 uma crise democrática, marcada pela judicialização da política e pela hipertrofia da atividade judicante. Nesse contexto se torna público o debate a respeito de um novo desenho sobre a  estrutura e o funcionamento da aludida instituição para o resgate da democracia nas relações políticas. Essa discussão envolve igualmente uma crítica sobre as profissões jurídicas que tem por objetivo contemplar a análise crítica de temas como: formação profissional para os direitos humanos e para justiça cognitiva; cultura do di&aa cute;logo com a sociedade e experiência jurídicas emancipatórias; ativismo judicial; ofensa à soberania e interferências externas na atividade do juiz; ética; pluralismo de alta intensidade; autoritarismo; desjudicialização; ecologia de saberes e epistemologia jurídica, etc.",
                     "coordinators": "Zeu Palmeira Sobrinho"
-                }
+                },
+				{
+					"name": "Direito e Desenvolvimento",
+					"syllabus": "Constitucionalismo e estrutura econômica. Legislação como instrumento de políticas públicas. Planejamento econômico. Regulação estatal, serviços públicos e atividade econômica. Disciplina da atividade empresarial.",
+					"coordinators": "Yanko Marcius de Alencar Xavier, Patrícia Borba Vilar Guimarães, Fabricio Gemano Alves, Anderson da Silva Lanzillo"
+				}
             ]
         },
         {
@@ -222,7 +227,12 @@
                     "name": "Operações, Logística e Gestão de Materiais",
                     "syllabus": "Discutir estratégias e práticas aplicáveis a sistemas de produção; gestão de qualidade e produtividade; filosofia lean; operações sustentáveis; gestão da cadeia de suprimentos; estratégias de transporte e localização; operadores logísticos; gestão de estoques; movimentação e armazenagem de materiais; aquisições; desenvolvimento, seleção e avaliação de fornecedores; entre outros temas correlatos que possam contribuir para o aperfeiçoamento da área nos setores público e privado.",
                     "coordinators": "Anne Carvalho, Carlos Alberto Medeiros, Carlos Feitor e Luciano Sampaio"
-                }
+                },
+				{
+					"name": "Marketing",
+					"syllabus": "Administração de Marketing. Marketing no Século XXI como ferramenta pedagógica no contexto educacional. Marketing em áreas especiais. Gerenciamento do processo de marketing, marketing virtual e inteligência competitiva.",
+					"coordinators": "Thelma Pìgnataro"
+				}
             ]
         },
         {
