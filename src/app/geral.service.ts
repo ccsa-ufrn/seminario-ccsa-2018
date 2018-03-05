@@ -36,7 +36,7 @@ export class GeralService {
 
   public getNews(): Observable<Array<News>> {
       return this._http
-        .get('http://localhost:3000/api/event/5a70ca268f5fc344c2cac32d/news/all')
+        .get('https://sigeva.ccsa.ufrn.br/api/event/5a720e7e586eef000f1a38c4/news/all')
         .map((res: any) => { return res.json().data });
   }
 
