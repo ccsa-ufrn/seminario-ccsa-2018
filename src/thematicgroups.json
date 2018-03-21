@@ -157,12 +157,12 @@
         {
           "name": "Trabalho Decente, Relações de Trabalho e Democracia",
           "syllabus": "O trabalho decente consiste na efetivação de políticas que resultem na priorização do trabalho como fundamento da dignidade pessoal do trabalhador, da estabilidade familiar e da paz social. A OIT estabelece que o trabalho decente compreende todo labor que eleva os patamares civilizatórios e auxilia a promover um mundo mais justo do ponto de vista social e econômico. Nesse sentido a OIT aponta que o trabalho decente compatibiliza com o cumprimento das seguintes Convenções Internacionais:  29 e 105 (que trata sobre o trabalho em condição análoga à de escravo); 138 e 182 (trata sobre o trabalho infantil); 100 e 111 (trata da discriminação no trabalho);  87 e 98 (trata da liberdade sindical e da negociação coletiva). Portanto, o objetivo do GT é permitir o debate sobre o trabalho decente como elemento de inclus&atilde ;o social, de redução da pobreza, de combate às desigualdades sociais e de promoção da dignidade dos trabalhadores.",
-          "coordinators": "Zeu Palmeira Sobrinho"
+          "coordinators": "Zeu Palmeira Sobrinho e Fabiana Dantas Soares Alves da Mota"
         },
         {
           "name": "Judiciário, Profissões Jurídicas e Democracia",
           "syllabus": "O Brasil vivencia desde 2016 uma crise democrática, marcada pela judicialização da política e pela hipertrofia da atividade judicante. Nesse contexto se torna público o debate a respeito de um novo desenho sobre a  estrutura e o funcionamento da aludida instituição para o resgate da democracia nas relações políticas. Essa discussão envolve igualmente uma crítica sobre as profissões jurídicas que tem por objetivo contemplar a análise crítica de temas como: formação profissional para os direitos humanos e para justiça cognitiva; cultura do di&aa cute;logo com a sociedade e experiência jurídicas emancipatórias; ativismo judicial; ofensa à soberania e interferências externas na atividade do juiz; ética; pluralismo de alta intensidade; autoritarismo; desjudicialização; ecologia de saberes e epistemologia jurídica, etc.",
-          "coordinators": "Zeu Palmeira Sobrinho"
+          "coordinators": "Zeu Palmeira Sobrinho e Fabiana Dantas Soares Alves da Mota"
         },
         {
           "name": "Direito e Desenvolvimento",
@@ -183,11 +183,6 @@
           "name": "Ato administrativo, processo administrativo e direitos fundamentais dos administrados",
           "syllabus": "Ato administrativo: conceito, planos, estrutura e atributos.  Garantias fundamentais no processo administrativo. Classificação dos atos e processos administrativos. Processos administrativos em espécie. Extinção dos atos administrativos.",
           "coordinators": "Vladimir França"
-        },
-        {
-          "name": "Direito, Linguagem e Sociedade",
-          "syllabus": "O objetivo do presente grupo de trabalho é discutir as relações entre Direito e Linguagem em seus variados aspectos a partir de múltiplas perspectivas teóricas, tendo em vista o aspecto social dessa inter-relação. Modernamente cresce a percepção de que o exercício democrático do Direito não significa apenas ter acesso aos meios institucionais ligados ao sistema de justiça estatal, mas também compreender esses meios, o que implica no acesso, claridade e compreensão da linguagem jurídica. Interessa especialmente trabalhos que discutam: a) aspectos epistemológicos e teóricos gerais ligados ao Direito e à Linguagem (Teoria e Filosofia do Direito, e Ciências da Linguagem); b) argumentação e hermenêutica jurídica; c) a linguagem jurídica e seus gêneros (Linguística e Dogmática Jurídica); d) direito, linguagem e práticas sociais/ acesso à justiça.",
-          "coordinators": "Anderson da Silva Lanzillo"
         },
         {
           "name": "Direito Tributário e Manutenção da Ordem Econômica",
@@ -222,18 +217,23 @@
         {
           "name": "Direito Internacional e a sua Efetivação na Ordem Jurídica Interna",
           "syllabus": "Direito Internacional. Direito Estatal. Soberania. Tratados Internacionais. Aplicação. Jurisdição. Efetividade. Tribunal Penal Internacional.",
-          "coordinators": "Thiago Oliveira Moreira, Diogo Pignataro e Anna Emanuella Rocha"
-        },
-        {
-          "name": "Trabalho Decente e Democracia",
-          "syllabus": "Sem conteúdo cadastrado.",
-          "coordinators": "Zeu Palmeira"
+          "coordinators": "Thiago Oliveira Moreira, Diogo Pignataro, Marconi Macedo e Jahyr Philippe Bichara"
         },
         {
           "name": "Judiciário, Profissões Jurídicas e Relações Democráticas",
           "syllabus": "Sem conteúdo cadastrado.",
           "coordinators": "Zeu Palmeira"
-        }
+        },
+		{
+                    "name": "Direito Ambiental e Sociedade",
+                    "syllabus": "Questões socioambientais (globais, nacionais, regionais, locais) e o Direito Ambiental. Novos debates e paradigmas. O direito ao meio ambiente ecologicamente equilibrado e sua efetivação no Brasil (avanços e fragilidades). O dever do Estado e da sociedade da proteção e defesa do meio ambiente. Educação e conscientização pública na matéria ambiental. Conceitos, instrumentos e princípios de Direito Ambiental e sua efetividade. O papel dos entes federados e do Poder Público na implementação das normas de Direito Ambiental. Conflitos socioambientais. Tutela jurídica do meio ambiente natural, artificial, cultural e do trabalho. Políticas de Recursos Hídricos, Resíduos Sólidos, Mobilidade Urbana e Saneamento Ambiental.",
+                    "coordinators": "Marise Costa de Souza Duarte "
+                },
+		{
+                    "name": "Direito Urbanístico e Sociedade",
+                    "syllabus": "Política Urbana no Brasil e a Constituição Federal de 1988. A Reforma Urbana. A Questão Metropolitana e o Estatuto das Metrópoles. Estatuto da Cidade e leis correlacionadas. Princípios de Direito Urbanístico. Instrumentos urbanísticos. O direito à cidade e a sustentabilidade urbana. O papel do Judiciário na implementação da legislação urbanística. Democratização da gestão urbana. Plano Diretores. Plano Diretor de Natal. Desafios e fragilidades na implementação da legislação urbanística.",
+                    "coordinators": "Marise Costa de Souza Duarte "
+                }
       ]
     },
     {
