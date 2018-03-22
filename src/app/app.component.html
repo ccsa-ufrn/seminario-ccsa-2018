@@ -128,7 +128,8 @@
     <div class="row">
       <div class="col-12">
         <nav class="main">
-          <a class="blue" (click)="_toggleProgramacaoModal()" (keypress.enter)="_toggleProgramacaoModal()">Programação(Em breve)</a>
+          <a class="blue">Programação (em breve)</a>
+          <!-- <a class="blue" (click)="_toggleProgramacaoModal()" (keypress.enter)="_toggleProgramacaoModal()">Programação (em breve)</a> -->
           <a class="blue" (click)="_gotTo('#s-downloads')" (keypress.enter)="_gotTo('#s-downloads')">Downloads</a>
           <a class="red" (click)="_gotTo('#s-inscription')" (keypress.enter)="_gotTo('#s-inscription')">Inscreva-se</a>
           <a class="yellow" href="http://sigeva.ccsa.ufrn.br/login">Acessar</a>
@@ -875,6 +876,21 @@
     </div>
   </div>
 </div>
+
+<div class="modal-news" [ngClass]="{'open': modalPrazo}">
+    <div class="container-all">
+      <div class="header">
+        NOTÍCIA IMPORTANTE
+        <a (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <h2>O PRAZO PARA INSCRIÇÕES E SUBMISSÕES DE TRABALHOS SE ENCERRA EM 1º DE ABRIL</h2>
+        <p>
+          Faça sua inscrição no Sigeva
+        </p>
+      </div>
+    </div>
+  </div>
 
 
 <div class="modal-news" [ngClass]="{'open': modalUmaNoticiaModal}">
