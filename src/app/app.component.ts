@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
     private modalProgramacao: boolean;
     private modalUmaNoticiaModal: boolean;
     private modalPrazo: boolean;
+    private modalColoquio: boolean;
 
     public umaNoticia: News;
 
@@ -65,6 +66,7 @@ export class AppComponent implements OnInit {
         this.modalConferencia = false;
         this.modalProgramacao = false;
         this.modalUmaNoticiaModal = false;
+        this.modalColoquio = false;
         this.modalPrazo = true;
 
         /** REGISTER FORM */
@@ -332,6 +334,10 @@ export class AppComponent implements OnInit {
 
     private _togglePrazoModal() {
         this.modalPrazo = !this.modalPrazo;
+    }
+    
+    private _toggleColoquioModal() {
+        this.modalColoquio = !this.modalColoquio;
     }
 
     private _toggleUmaNoticiaModal(id?: number) {
