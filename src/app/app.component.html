@@ -1,5 +1,4 @@
-<!-- OVERLAY -->
-<div class="backdrop"></div>
+<!-- OVERLAY --> <div class="backdrop"></div>
 <div (click)="_handleOverlayClick()" class="overlay"></div>
 <nav class="menu-mobile">
   <a href="http://sigeva.ccsa.ufrn.br/login">Entrar</a>
@@ -128,8 +127,8 @@
     <div class="row">
       <div class="col-12">
         <nav class="main">
-          <a class="blue">Programação (em breve)</a>
-          <a class="blue" (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">Programação Coloquios</a>
+          <a class="blue" (click)="_toggleProgramacaoModal()" (keypress.enter)="_toggleProgramacaoModal()">Programação</a>
+          <a class="blue" (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">Subeventos</a>
           <a class="blue" (click)="_gotTo('#s-downloads')" (keypress.enter)="_gotTo('#s-downloads')">Downloads</a>
           <a class="red" (click)="_gotTo('#s-inscription')" (keypress.enter)="_gotTo('#s-inscription')">Inscreva-se</a>
           <a class="yellow" href="http://sigeva.ccsa.ufrn.br/login">Acessar</a>
@@ -388,7 +387,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 id="s-inscription">INSCRIÇÕES <span>ATÉ 1 DE ABRIL</span></h1>
+          <h1 id="s-inscription">INSCRIÇÕES <span>ATÉ 7 DE MAIO</span></h1>
           <p>A partir de sua 23º edição o <strong>Seminário de Pesquisa do CCSA</strong> utilizará a plataforma Sigeva (Sistema de Gestão de Eventos Acadêmicos), desenvolvida
           para suportar eventos do CCSA. Para efetuar inscrição no evento é necessário criar uma conta na plataforma que pode ser acessada pelo endereço
           <a href="http://sigeva.ccsa.ufrn.br" target="_blank">http://sigeva.ccsa.ufrn.br</a>.</p>
@@ -867,9 +866,13 @@
       <a (click)="_toggleProgramacaoModal()" (keypress.enter)="_toggleProgramacaoModal()">FECHAR</a>
     </div>
     <div class="container-modal">
-
-      <a href="assets/ng2/download/programacao.pdf" target="_blank">CLIQUE AQUI</a> PARA BAIXAR A PROGRAMAÇÃO.
-
+      <a href="assets/ng2/download/CONFERENCIAS.pdf" target="_blank">CLIQUE AQUI</a> PARA BAIXAR A PROGRAMAÇÃO DE CONFERÊNCIAS.
+      <br/>
+      <a href="assets/ng2/download/MINICURSOS.pdf" target="_blank">CLIQUE AQUI</a> PARA BAIXAR A PROGRAMAÇÃO DE MINICURSOS.
+      <br/>
+      <a href="assets/ng2/download/MESAS-REDONDAS.pdf" target="_blank">CLIQUE AQUI</a> PARA BAIXAR A PROGRAMAÇÃO DE MESAS-REDONDAS.
+      <br/>
+      <a href="assets/ng2/download/OFICINAS.pdf" target="_blank">CLIQUE AQUI</a> PARA BAIXAR A PROGRAMAÇÃO DE OFICINAS.
     </div>
   </div>
 </div>
@@ -883,7 +886,438 @@
       <div class="container-modal">
 		  <p>A Programação das atividades do Seminário foi organizada de modo a evitar choques entre as diferentes modalidades - minicursos, em uma faixa de horário, oficinas em outra faixa de horário, mesas redondas e conferências em uma terceira faixa de horário - de modo que todos possam se inscrever e participar das mais diversas atividades, sem limite de número. Para ilustrar essa concepção, por exemplo: é possível inscrever-se em um minicurso e/ou em uma oficina pela manhã, em outro(a) à tarde e em um(a) terceiro(a) à noite; do mesmo modo, é possível inscrever-se diversas mesas redondas e conferências desde que não haja choque de agendamento entre elas.</p>
 		  <p>Ainda, lembramos que cada atividade dessas conta como carga horária de atividades complementares conforme a normativa de cada curso, todas disponíveis na página do Seminário!</p>
+                  <p>Obs: As atividades dos subeventos já fazem parte da programação do Seminário, de modo que basta se inscrever diretamente em uma dessas atividades para participação nos subeventos!</p>
         <p>Consulte os horários e faça com o que o seu agendamento fique repleto de atividades!</p>
+      </div>
+    </div>
+  </div>
+  
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalWelfare}">
+    <div class="container-all">
+      <div class="header">
+        XVI Seminário de Seguridade Social e Trabalho: Trabalho Decente e Democracia
+        <a (click)="_toggleWelfareModal()" (keypress.enter)="_toggleWelfareModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <div>
+          <p>O Seminário de Seguridade Social e Trabalho, promovido pelo GESTO (Grupo de Estudos
+              Seguridade Social e Trabalho) tem por objetivo central proporcionar a divulgação e a atualização
+              de conhecimentos sobre temáticas relacionadas aos direitos trabalhistas e previdenciários, com
+              foco especial, na questão das recentes reformas dos direitos sociais. O evento é uma realização da
+              Base de Pesquisa DIREITOS SOCIAIS E CONTEMPRANEIDADE e conta com o apoio do
+              Departamento de Direito Privado da UFRN.</p>
+              <h3>18/05</h3>
+              <ul>
+                <li><strong>Local: </strong>Auditório do NEPSA 1 (PRÓXIMO AO BLOCO DO GOIABÃO)</li>
+                <li><strong>09h:00 as 12:00 - </strong>Preparação</li>
+                <li><strong>14:00 - </strong>Credenciamento</li>
+                <li><strong>14:15 - </strong>Apresentação artística</li>
+                <li><strong>14:40 - </strong>Conferência de abertura
+                  <ol>
+                    <li>Juiza Laura Brenda- presidente da AJD - Associaçao de Juristas para a Democracia</li>
+                    <li><strong>Presidente da mesa: </strong>Maria Arlete Duarte Araújo</li>
+                  </ol>
+                </li>
+                <li>Criação oficial do Núcleo Juridico da AJD no RN</li>
+                <li><strong>Painel: </strong>Trabalho Decente e Gênero
+                  <ol>
+                    <li><strong>Painelista 1: </strong> Ana Laura Araújo (integrante AJPDC - Associação dos Juristas Potiguares
+                      pela Democracia e Cidadania).</li>
+                    <li><strong>Painelista 2: </strong>Paula Lays (Pesquisadora do GESTO e acadêmica de direito) </li>
+                  </ol>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal-news" style="z-index: 1000"[ngClass]="{'open': modalExtension}">
+    <div class="container-all">
+      <div class="header">
+        VII Mostra de Extensão
+        <a (click)="_toggleExtensionModal()" (keypress.enter)="_toggleExtensionModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <div>
+          <h3>15/05</h3>
+          <ul>
+            <li>15h:30 Conferência: Extensão na UFRN
+              <ol>
+                <li>Prof. Fatima Ximenes / Pró-Reitora de Extensão UFRN</li>
+              </ol>
+            </li>
+            <li>16h:30 Diálogos sobre Extensão:  Inserção Curricular da Extensão no Cursos de Graduação do CCSA
+              <ol>
+                <li><strong>Mediadora: </strong>Pamela de Medeiros Brandão/Assessora Acadêmica do CCSA</li>
+                <li><strong>Objetivo: </strong>Refletir sobre estratégias para promover a inserção curricular 
+                  das atividades de extensão no projeto pedagógico dos cursos de Graduação do CCSA, em direção 
+                  à meta preconizada no Plano Nacional de Educação (PNE 2011 – 2020) de destinar 10% da carga 
+                  horária para atividades acadêmicas de extensão universitária na formação acadêmica dos estudantes de graduação</li>
+                <li><strong>Público alvo: </strong>Atividade direcionada aos coordenadores e membros do NDE  dos cursos de Graduação do CCSA.</li>
+              </ol>
+            </li>
+          </ul>
+          <br/>
+          <h3>16/05</h3>
+          <ul>
+            <li>09h:30 Oficina: Metodologias de Ensino para a Inclusão  
+              <ol>
+                <li><strong>Mediador: </strong>CAENE</li>
+                <li><strong>Objetivo: </strong> Apresentar práticas pedagógicas de apoio ao ensino e à aprendizagem de alunos com deficiência.</li>
+                <li><strong>Público alvo: </strong>Professores dos cursos de Graduação do CCSA.</li>
+              </ol>
+            </li>
+            <li>15h:30 Oficina; Diálogos sobre Extensão:  Avaliando e Planejando a Extensão do CCSA
+              <ol>
+                <li><strong>Mediadora: </strong> Pamela de Medeiros Brandão/Assessora Acadêmica do CCSA. E o NADIS</li>                
+                <li><strong>Objetivo: </strong> Realizar um balanço das atividades desenvolvidas no âmbito do CCSA com 
+                vistas a delinear estratégias integradas para a expansão e desenvolvimento das ações de extensão.</li>
+                <li><strong>Público alvo: </strong>Atividade direcionada a todos os professores e alunos envolvidos em ações de extensão no CCSA..</li>
+              </ol>
+            </li>
+          </ul>
+          </div>
+          <br/>
+      </div>
+    </div>
+  </div>
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalTalkingCircle}">
+    <div class="container-all">
+      <div class="header">
+        EVENTO RODA DE CONVERSA  - ANO  V
+        <a (click)="_toggleTalkingCircleModal()" (keypress.enter)="_toggleTalkingCircleModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <br/>
+          <div>
+          <h3>15/05 - 9h:30</h3>
+          <ul>
+            <li><strong>ASPECTOS PROCESSUAIS DO ACESSO À JUSTIÇA NO BRASIL,2017 - Auditório 4 Nepsa 2</strong>
+              <ol>
+                <li>Jose Orlando Riberio Rosário</li>
+                <li>Cristina Forani Consani</li>
+                <li>PatricIa Borba V. Guimaraes</li>
+                <li>Celso Luiz Braga de Castro</li>
+              </ol>
+            </li>
+            <br/>
+            <li><strong>ACESSO À JUSTICA: </strong>aspectos constitucionais e sociais, 2017 - Auditório 4 Nepsa 2
+              <ol>
+                <li>Jose Orlando Riberio Rosário</li>
+                <li>Cristina Forani Consani</li>
+                <li>Yanko  Marcius de Alencar Xavier</li>
+                <li>Celso Luiz Braga de Castro</li>
+              </ol>
+            </li>
+            <li><strong>ACESSO À JUSTIÇA: </strong>perspectivas filosóficas,2017 - Auditório 4 Nepsa 2
+              <ol>
+                <li>Jose Orlando Riberio Rosário</li>
+                <li>Cristina Forani Consani</li>
+                <li>Ricardo Tinoco de Goés</li>
+                <li>Celso Luiz Braga de Castro</li>
+              </ol>
+            </li>
+          </ul>
+          <br/>
+          <h3>16/05 - 15h:30</h3>
+          <ul>
+            <li><strong>GESTÃO ESTRATÉGICA DAS EXPERIÊNCIAS DE LAZER</strong> - Auditório 2 Nepsa 2
+              <ol>
+                <li>Autores: Paulo Henrique Azevêdo; Antônio Carlos Bramante </li>
+                <li>Autor presente: Mozart Fazito Rezende (escreveu o capítulo  Desenvolvimento, Turismo, Lazer e Viagens Sensoriais)</li>
+              </ol>
+            </li>
+            <li><strong>GESTÃO DE RISCO PARA TURISMO DE AVENTURA</strong> - Auditório 2 Nepsa 2
+              <ol>
+                <li>Autor presente: Jodrian Freitas</li>
+              </ol>
+            </li>
+            <li><strong>O OLHAR DO RESIDENTE: TEORIAS E CASOS NA GESTÃO DO TURISMO</strong> - Auditório 2 Nepsa 2              
+              <ol>
+                <li>Autores: Marcelo Milito, Sérgio Marques e Mayara Farias</li>
+              </ol>
+            </li>
+          </ul>
+          <br/>
+          <h3>17/05 - 9h:30</h3>
+          <ul>
+            <li><strong>DESIGUALDADE SOCIAL E POLÍTICAS SOCIAIS: </strong>estudos sobre expressões da questão
+              social e políticas de enfrentamento a pobreza na cidade e no campo,  2017
+              <ol>
+                <li>Iris Maria de Oliveira</li>
+                <li>Maria Regina Avila Moreira</li>
+                <li>Edla Hoffmann</li>
+                <li>Ilena Felipe Barros</li>
+                <li>Rosangela Alves de Oliveira</li>
+                <li>Eliana Andrade da Silva</li>
+              </ol>
+            </li>
+            <li><strong>DENÚNCIA ANÔNIMA: </strong> instrumento de proteção de direitos fundamentais no Brasil", 2017 
+              <ol>
+                <li>Morton  Medeiros </li>
+              </ol>
+            </li>
+            <li><strong>DIREITO E JUSTIÇA , 2017</strong>
+              <ol>
+                <li>Jose Orlando Riberio Rosário</li>
+                <li>Cristina Forani Consani</li>
+                <li>Celso Luiz Braga de Castro</li>
+                <li>Yanko  Marcius de Alencar Xavier</li>
+                <li>PatricIa Borba V. Guimaraes </li>
+              </ol>
+            </li>
+            <li><strong>FEMINISMO, DIVERSIDADE SEXUAL E SERVIÇO SOCIAL, 2017 </strong>
+              <ol>
+                <li>Mirla Cisne (UERN)</li>
+                <li>Silvana Mara (UFRN)</li>
+              </ol>
+            <li><strong>REPOSITÓRIOS DIGITAIS: teoria e prática</strong>
+              <ol>
+                <li>Autores e Organizadores: Vechiato, 
+                  Fernando Luiz, Marques, Clediane de Araujo Guedes, 
+                  Koshiyama, Débora Costa Araújo Di Giacomo,  Moura, 
+                  Elisângela Alves de, Torino, Emanuelle, aia, Maria 
+                  Aniolly Queiroz, Marques, Marques, Tércia Maria 
+                  Souza de Moura</li>
+              </ol>
+            </li>
+          </ul>
+          </div>
+          <br/>
+      </div>
+    </div>
+</div>
+
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalInternational}">
+    <div class="container-all">
+      <div class="header">
+        Colóquio Internacional - Agricultura camponesa, segurança alimentar e nutricional e resistências: interlocuções Brasil, Argentina, Colômbia
+        <a (click)="_toggleInternationalModal()" (keypress.enter)="_toggleInternationalModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <div>
+          <li><strong>Coordenador: </strong>Prof. Washington José de Sousa (PPGA/CCSA/UFRN)</li>
+          <br/>
+          <h3>Brasil - 17/05 - Manhã</h3>
+          <ul>
+            <li>Mapeamentos da produção científica nacional e da UFRN em segurança alimentar e nutricional (SAN)
+              <ol>
+                <li>Denys Daniel da Silva</li>
+                <li>Diego José do Nascimento Rabelo</li>
+                <li>Sarah Monique Fonseca de Menezes</li>
+              <li><strong>Mediador: </strong> Prof. Raoni Fernandes Azeredo, Universidade Federal do Oeste do Pará (UFOPA)</li>
+              </ol>
+            </li>
+          </ul>
+          <br/>
+          <h3>Brasil - 17/05 - Tarde</h3>
+          <ul>
+            <li>Um resgate das políticas de SAN no Brasil
+              <ol>
+                <li>Sandro Silva, Instituto de Pesquisa Econômica Aplicada (IPEA)</li>
+              </ol>
+            </li>
+            <li>O Projeto SISAN Universidades e o OBSERVASAN - Observatório Nordestino de Segurança e Soberania Alimentar e Nutricional
+              <ol>
+                <li>Maurício Sardá, Universidade Federal Rural de Pernambuco (UFRPE)</li>
+                <li><strong>Mediadora: </strong> Dinara Leslie Macedo e Silva (Faculdade de Ciências da Saúde do Trairi –   Facisa/UFRN)</li>
+              </ol>
+            </li>
+          </ul>
+          <br/>
+          <h3>Colombia e Argentina - 18/05 - Manhã</h3>
+          <ul>
+            <li>Sumapaz território de lutas agrárias na Colômbia: histórias e geografias e resistências indígenas e camponesas - do latifúndio de ontem ao neoextrativismo de hoje
+              <ol>
+                <li>Oscar Hernan Triviño,  (Universidad de Cundinamarca (Colômbia)</li>
+              </ol>
+            </li>
+            <li>O associativismo rural na Argentina. Principais discussões e desafios atuais
+              <ol>
+                <li>Juan Emanuel Barrera Calderón, Universidade Nacional de Córdoba (Argentina)</li>
+                <li><strong>Mediador: </strong>Maurício Sardá, Universidade Federal Rural de Pernambuco (UFRPE)</li>
+              </ol>
+            </li>
+          </ul>
+          </div>  
+          <br/>
+
+      </div>
+    </div>
+  </div>
+
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalFeminism}">
+    <div class="container-all">
+      <div class="header">
+        I COLÓQUIO FEMINISMO MATERIALISTA E MARXISMO
+        <a (click)="_toggleFeminismModal()" (keypress.enter)="_toggleFeminismModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <div>
+          <li><strong>Realização: </strong> Grupos de Pesquisa GEPTED e QTEMOSS</li>
+          <br/>
+          <h3>1ª Dia - 14/05</h3>
+            <ul>
+              <li><strong>8h:00</strong> Abertura</li>
+              <li><strong>8h:30 </strong> Lançamento do Livro "Feminismo, Diversidade Sexual e Serviço Social" - Profª Drª. Mirla Cisne (UERN) e Profª. Drª. Silvana Mara (UFRN)</li> 
+              <li><strong>9h:00</strong> Palestra - Crítica a noção de gênero, feminismo materialista e marxismo: questões polêmicas e desafios  
+                <ol>
+                  <li>Palestrantes: ProfªDrª Janaiky Almeida (UFERSA) e ProfªDrª Mirla Cisne (UERN);</li>
+                  <li><strong>Coordenação:</strong> ProfªDrª Andréa Lima (UFRN) e Fernanda Nascimento (Bolsista IC)</li>
+                </ol>
+              </li>
+              <li><strong>11h:00</strong> Debate</li>
+              <li><strong>14h:00</strong> Palestra - Crítica a noção de gênero, feminismo materialista e marxismo: questões polêmicas e desafios                
+                <ol>
+                  <li>Palestrantes: Profª. Drª Anotinette Brito (UFRN) e Drª Verônica Ferreira (SOS CORPO e AMB) </li>
+                  <li><strong>Coordenação:</strong> ProfªDrª Ilka Lima e Lenny Grillo (Bolsista IC)</li>
+                  <li><strong>16h:00</strong> Debate</li>
+                </ol>
+              </li>
+            </ul>
+            <br/>
+            <h3>2ª Dia - 15/05</h3>
+            <ul>
+              <li><strong>9h:30</strong> Mesa-Redonda - Feminismo, Serviço Social e questões contemporâneas [
+                <ol>
+                  <li>Violência contra mulher – ProfªDrª Fernanda Marques (UERN)</li>
+                  <li>Assédio Sexual – ProfªDrª Ilidiana Diniz (UFRN)</li>
+                  <li>Feminismo e participação política - Profª Drª.Telma Gurgel </li>
+                  <li>Feminismo e Projeto Ético-político do Serviço Social – Profª Drª Miriam Inácio (UFRN)</li>
+                  <li><strong>Coordenação:</strong> ProfªDrª Rita de Lourdes e Karol Alves (Bolsista IC)</li>
+                </ol>
+              </li>
+              <li><strong>Tarde: </strong> Reunião GEPTED/QTEMOSS e Pesquisadoras convidadas</li>
+            </ul>
+          </div>
+          <br/>
+      </div>
+    </div>
+  </div>
+
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalPublicManagement}">
+    <div class="container-all">
+      <div class="header">
+        IV COLÓQUIO SOBRE GESTÃO PÚBLICA
+        <a (click)="_togglePublicManagementModal()" (keypress.enter)="_togglePublicManagementModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <a href="assets/ng2/download/2018_04_04_ IV_Coloquio_Gestao_Publica.pdf"><h4>Folder do evento</h4></a>
+        <div>
+        <h3>1ª Dia - 16/05</h3>
+          <ul>
+            <li><strong>15h:30</strong> Mesa-Redonda - Os desafios da profissionalização da burocracia
+              <ol>
+                <li>Palestrantes: Pedro Luiz Costa Cavalcante (Coordena-
+                    dor de Estudos e Políticas de Estado e Democracia -
+                    IPEA) e Natália Massaco Koga (ENAP)
+                    Mediador: Prof. Richard Medeiros (PPGP/UFRN)</li>
+                <li><strong>Local:</strong> Auditório do Curso de Ciências Contábeis –
+                    Sala H2 – Setor V</li>
+              </ol>
+            </li>
+            <li><strong>19:30 </strong> Cerimônia de Abertura 
+            <li><strong>20:00</strong> Conferência - Construindo capacidades institucionais de gestão na Administração Pública: limites e
+              possibilidades 
+              <ol>
+                <li>Conferencista: Alexandre de Avila Gomide (Diretor de
+                    Estudos e Políticas do Estado, Instituições e Democra-
+                    cia - IPEA)</li>
+                <li><strong>Local:</strong> Auditório do NEPSA I</li>
+              </ol>
+            </li>
+          </ul>
+          <br/>
+          <h3>2ª Dia - 17/05</h3>
+          <ul>
+            <li><strong>9h:30</strong> Mesa-Redonda - Laboratórios de Governo e Inovação na Gestão Pública 
+              <ol>
+                <li>Palestrantes: Marco Bruno Miranda Clementino
+                    (Diretor do Foro da Justiça Federal no Rio
+                    Grande do Norte e do i.9 JFRN, Laboratório de
+                    Inovação da JFRN) e Daniela Coimbra Swiatek
+                    (Coordenadora do Laboratório de Inovação em
+                    Mobilidade - Prefeitura de São Paulo)</li>
+                <li>Mediador: Prof. Hironobu Sano (PPGP/PPGA/UFRN)</li>
+                <li><strong>Local:</strong> Auditório do NEPSA I</li>
+              </ol>
+            </li>
+            <li><strong>15:30</strong> Conferência de Encerramento - Novos dilemas e alternativas para a Gestão Pública 
+              <ol>
+                <li>Conferencista: João Mendes da Rocha Neto
+                    (Professor do Programa de Pós-graduação em
+                    Administração - UNB, Escola Nacional de
+                    Administração Pública)</li>
+                <li><strong>Local:</strong> Auditório do NEPSA I</li>
+              </ol>
+            </li>
+          </ul>
+          </div>
+          <br/>
+      </div>
+    </div>
+  </div>
+
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalInfoScience}">
+    <div class="container-all">
+      <div class="header">
+        Coloquio de Ciência da Informação - Tema: Protagonismo Social da Informação
+        <a (click)="_toggleInfoScienceModal()" (keypress.enter)="_toggleInfoScienceModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <a href="assets/ng2/download/VIII_Coloquio_de_Pesquisa_em_Ciencia_da_Informacao.pdf"><h4>Folder do evento</h4></a>
+        <ul>
+          <h3>1ª Dia - 15/05</h3>
+          <ul>
+            <li><strong>16:00 – Café de boas-vindas – Sala de reunião setor V</strong></li>
+            <p>Reunião com a Profa Henriette Ferreira Gomes (UFBA) e a Coordenação do Curso de Graduação em Biblioteconomia, 
+              Coordenação do Mestrado Profissional em Gestão da Informação e do Conhecimento e com os membros do Grupo de 
+              Pesquisa “Informação na Sociedade Contemporânea”.</p>
+          </ul>
+          <h3>2ª Dia - 16/05</h3>
+          <ul>
+            <li><strong>16/05 ABERTURA DO EVENTO  / LOCAL: NEPSA I</strong></li>
+            <li><strong>15h:30</strong> Apresentação cultural / Grupo Potibones</li>
+            <li><strong>15h:45</strong> Mesa de Abertura
+            <ol>
+              <li>Profa. Dra. Maria Arlete Duarte de Araújo (Diretora do CCSA/UFRN);</li>
+              <li>Prof. Dr. Fernando Luiz Vechiato (Chefe do DECIN/UFRN);</li>
+              <li>Prof. MSc. Francisco de Assis Noberto Galdino de Araújo (Coordenador COBIB/UFRN); </li>
+              <li>Profa. Dra. Andrea Vasconcelos Carvalho / Prof. Dr. Pedro Alves Barbosa Neto (Coordenador (a) PPGIC/UFRN); </li>
+              <li>Profa. Dra. Gabrielle Francinne de S.C Tanus (Coordenadora VIII CPCI)</li>
+            </ol></li>
+            <li><strong>16h. às 17h30</strong> Palestra de abertura com a Profa. Dra. Henriette Ferreira Gomes - (UFBA): “Ciência da Informação em favor do protagonismo social: contributo ao desenvolvimento humano”</li>
+            <li><strong>17:30 Lançamento do livro</strong> "Informação e Protagonismo social”/ Henriette Ferreira Gomes, Hildenise Ferreira Novo (Org.) / 2017</li>
+          </ul>
+          <br/>
+          <h3>3ª Dia - 17/05</h3>
+          <ul>
+            <li><strong>09h30 às 11h30:</strong> Grupos Temáticos</li>
+            <li><strong>13h às 15h: </strong>Minicursos</li>
+            <li><strong>15h30 às 17:00: </strong>Mesa redonda: “Ciência da Informação: informação, mediação e cultura”
+              <ol>
+                <li>Profa. Dra. Henriette Ferreira Gomes (UFBA)</li>
+                <li>Profa. Dra. Gabrielle Francinne de S.C Tanus (UFRN)</li>
+                <li>Profa. Dra. Monica Marques Carvalho Gallotti (UFRN)</li>
+                <li>Mediador: MSc. Francisco de Assis Noberto Galdino de Araújo</li>
+              </ol>
+            </li>
+          </ul>
+          <br/>
+          <h3>4ª Dia - 18/05</h3>
+          <ul>
+            <li><strong>09h30 às 11h30:</strong> Grupos Temáticos</li>
+            <li><strong>13h às 15h: </strong>Minicursos</li>
+            <li><strong>15h30: </strong>Painel: “Pesquisas em Gestão da Informação e do Conhecimento” 
+              <ol>
+                <li>Coordenadora: Profa. Dra. Andrea Vasconcelos Carvalho / Prof. Dr. Pedro Alves Barbosa Neto(PPGIC/UFRN)</li>
+              </ol>
+            </li>
+            <li><strong>17:00 - Encerramento: </strong></li>
+          </ul>
+        </ul>
+        <br/>
       </div>
     </div>
   </div>
@@ -891,15 +1325,41 @@
 <div class="modal-news" [ngClass]="{'open': modalColoquio}">
     <div class="container-all">
       <div class="header">
-         Colóquios 
+         Subeventos 
         <a (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">FECHAR</a>
       </div>
       <div class="container-modal">
-        <h2><a href="assets/ng2/download/2018_03_26_Coloquio_Ciencia_da_Informacao.docx" target="_blank">Coloquio de Ciência da Informação</a></h2>
-        <h2><a href="assets/ng2/download/2018_04_04_ IV_Coloquio_Gestao_Publica.pdf" target="_blank">Coloquio de Gestão Pública</a></h2>
+        <a (click)="_toggleInfoScienceModal()" 
+        (keypress.enter)="_toggleInfoScienceModal()">
+        <h2 style="color: #4F81BD">Coloquio de Ciência da Informação - Tema: Protagonismo Social da Informação - Mais informações</h2>
+        </a>
+        <a (click)="_togglePublicManagementModal()" 
+        (keypress.enter)="_togglePublicManagementModal()">
+        <h2 style="color: #4F81BD">IV COLÓQUIO SOBRE GESTÃO PÚBLICA - Mais informações</h2>
+        </a>
+        <a (click)="_toggleFeminismModal()" 
+        (keypress.enter)="_toggleFeminismModal()">
+        <h2 style="color: #4F81BD">I COLÓQUIO FEMINISMO MATERIALISTA E MARXISMO - Mais informações</h2>
+        </a>
+        <a (click)="_toggleInternationalModal()" 
+        (keypress.enter)="_toggleInternationalModal()">
+        <h2 style="color: #4F81BD">Colóquio Internacional - Agricultura camponesa, segurança alimentar e nutricional e resistências: interlocuções Brasil, Argentina, Colômbia - Mais informações</h2>
+        </a>
+        <a (click)="_toggleTalkingCircleModal()" 
+        (keypress.enter)="_toggleTalkingCircleModal()">
+        <h2 style="color: #4F81BD">EVENTO RODA DE CONVERSA  - ANO  V - Mais informações</h2>
+        </a>
+        <a (click)="_toggleExtensionModal()" 
+        (keypress.enter)="_toggleExtensionModal()">
+        <h2 style="color: #4F81BD"> VII Mostra de Extensão - Mais informações</h2>
+        </a>
+        <a (click)="_toggleWelfareModal()" 
+        (keypress.enter)="_toggleWelfareModal()">
+        <h2 style="color: #4F81BD">XVI Seminário de Seguridade Social e Trabalho: Trabalho Decente e Democracia - Mais informações</h2>
+        </a>
       </div>
-    </div>
   </div>
+</div>
 
 
 <div class="modal-news" [ngClass]="{'open': modalUmaNoticiaModal}">

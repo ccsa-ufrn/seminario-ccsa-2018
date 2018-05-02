@@ -24,6 +24,13 @@ export class AppComponent implements OnInit {
     private modalUmaNoticiaModal: boolean;
     private modalPrazo: boolean;
     private modalColoquio: boolean;
+    private modalInfoScience: boolean;
+    private modalPublicManagement: boolean;
+    private modalFeminism: boolean;
+    private modalInternational: boolean;
+    private modalTalkingCircle: boolean;
+    private modalExtension: boolean;
+    private modalWelfare: boolean;
 
     public umaNoticia: News;
 
@@ -67,6 +74,13 @@ export class AppComponent implements OnInit {
         this.modalProgramacao = false;
         this.modalUmaNoticiaModal = false;
         this.modalColoquio = false;
+        this.modalInfoScience = false;
+        this.modalPublicManagement = false;
+        this.modalFeminism = false;
+        this.modalInternational = false;
+        this.modalTalkingCircle = false;
+        this.modalExtension = false;
+        this.modalWelfare = false;
         this.modalPrazo = true;
 
         /** REGISTER FORM */
@@ -338,6 +352,34 @@ export class AppComponent implements OnInit {
     
     private _toggleColoquioModal() {
         this.modalColoquio = !this.modalColoquio;
+    }
+    
+    private _toggleInfoScienceModal() {
+        this.modalInfoScience = !this.modalInfoScience;
+    }
+
+    private _togglePublicManagementModal() {
+        this.modalPublicManagement = !this.modalPublicManagement;
+    }
+
+    private _toggleFeminismModal() {
+        this.modalFeminism = !this.modalFeminism;
+    }
+
+    private _toggleInternationalModal() {
+        this.modalInternational = !this.modalInternational;
+    }
+
+    private _toggleTalkingCircleModal() {
+        this.modalTalkingCircle = !this.modalTalkingCircle;
+    }
+
+    private _toggleExtensionModal() {
+        this.modalExtension = !this.modalExtension;
+    }
+
+    private _toggleWelfareModal() {
+        this.modalWelfare = !this.modalWelfare;
     }
 
     private _toggleUmaNoticiaModal(id?: number) {
