@@ -127,7 +127,7 @@
     <div class="row">
       <div class="col-12">
         <nav class="main">
-          <a class="blue" (click)="_toggleProgramacaoModal()" (keypress.enter)="_toggleProgramacaoModal()">Programação</a>
+          <a class="blue" href="https://docs.google.com/document/d/1wdtHDS5PEy-safMX-DwzWBhEikMLtzQHRSP9jHB00cQ/edit">Programação</a>
           <a class="blue" (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">Subeventos</a>
           <a class="blue" (click)="_gotTo('#s-downloads')" (keypress.enter)="_gotTo('#s-downloads')">Downloads</a>
           <a class="red" (click)="_gotTo('#s-inscription')" (keypress.enter)="_gotTo('#s-inscription')">Inscreva-se</a>
@@ -387,7 +387,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 id="s-inscription">INSCRIÇÕES <span>ATÉ 7 DE MAIO</span></h1>
+          <h1 id="s-inscription">INSCRIÇÕES <span>ATÉ 13 DE MAIO</span></h1>
           <p>A partir de sua 23º edição o <strong>Seminário de Pesquisa do CCSA</strong> utilizará a plataforma Sigeva (Sistema de Gestão de Eventos Acadêmicos), desenvolvida
           para suportar eventos do CCSA. Para efetuar inscrição no evento é necessário criar uma conta na plataforma que pode ser acessada pelo endereço
           <a href="http://sigeva.ccsa.ufrn.br" target="_blank">http://sigeva.ccsa.ufrn.br</a>.</p>
@@ -884,11 +884,11 @@
         <a (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()">FECHAR</a>
       </div>
       <div class="container-modal">
-      <p><strong>Atenção!:</strong> As inscrições para as atividade do seminário vão até o dia 10/05</p>
+      <p><strong>Atenção!:</strong> As inscrições para as atividade do seminário vão até o dia 13/05</p>
 		  <p>A Programação das atividades do Seminário foi organizada de modo a evitar choques entre as diferentes modalidades - minicursos, em uma faixa de horário, oficinas em outra faixa de horário, mesas redondas e conferências em uma terceira faixa de horário - de modo que todos possam se inscrever e participar das mais diversas atividades, sem limite de número. Para ilustrar essa concepção, por exemplo: é possível inscrever-se em um minicurso e/ou em uma oficina pela manhã, em outro(a) à tarde e em um(a) terceiro(a) à noite; do mesmo modo, é possível inscrever-se diversas mesas redondas e conferências desde que não haja choque de agendamento entre elas.</p>
 		  <p>Ainda, lembramos que cada atividade dessas conta como carga horária de atividades complementares conforme a normativa de cada curso, todas disponíveis na página do Seminário!</p>
                   <p>Obs: As atividades dos subeventos já fazem parte da programação do Seminário, de modo que basta se inscrever diretamente em uma dessas atividades para participação nos subeventos!</p>
-        <p>Consulte os horários e faça com o que o seu agendamento fique repleto de atividades!</p>
+        <p>Consulte os horários(No botão de "Programação" deste site) e faça com o que o seu agendamento fique repleto de atividades!</p>
       </div>
     </div>
   </div>
@@ -941,6 +941,7 @@
       </div>
       <div class="container-modal">
         <div>
+          <a href="assets/ng2/download/Extension.pdf"><h4>Folder do evento</h4></a>
           <h3>15/05</h3>
           <ul>
             <li>15h:30 Conferência: Extensão na UFRN
@@ -984,6 +985,7 @@
         <a (click)="_toggleTalkingCircleModal()" (keypress.enter)="_toggleTalkingCircleModal()">FECHAR</a>
       </div>
       <div class="container-modal">
+        <a href="assets/ng2/download/TalkingCircle.pdf"><h4>Folder do evento</h4></a>
         <br/>
           <div>
           <h3>15/05 - 9h:30</h3>
@@ -1254,6 +1256,33 @@
     </div>
   </div>
 
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalBeing}">
+    <div class="container-all">
+      <div class="header">
+        EXPOSIÇÃO 'A ESSÊNCIA DO SER
+        <a (click)="_toggleBeingModal()" (keypress.enter)="_toggleBeingModal()">FECHAR</a>
+      </div>
+      <div class="container-modal">
+        <a href="assets/ng2/download/EssenciaDoSer.pdf"><h4>Folder do evento</h4></a>
+        <ul>
+          <h3>Abertura 17/05/2018 às 9:30h - Hall de exposições do Nepsa</h3>
+          <p>A mostra é uma iniciativa do DEPAD e das professora Aline Nelson, Lilia Asuca, Pamela Brandão
+            Teresa Pires e Arlete Araújo com curadoria do fotógrafo e aluno da UFRN Vlademir Alexandre
+            e compõe um conjunto de fotografia autorais entre frases e trechos poéticos colecionados como relíquias
+            pela professora Dalvanir Avelino
+          </p>
+          <p>
+            A exposição fotográfica A ESSÊNCIA DO SER capta a beleza, fazendo com que nos despertem os sentidos e 
+            as emoções mais profundas em termos de reflexão sobre como deixamos o essencial da vida passar, por vezes,
+            despercebidos em meio às atribuições do cotidiano. Neste sentido é notável o olhar para a diversidade da fotógrafa
+            Dalvanir Avelino, cujo respeito ao outra e a solidariedade humana, próprias da sua essência, transparecem em seus registros.
+          </p>
+        </ul>
+        <br/>
+      </div>
+    </div>
+  </div>
+
 <div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalInfoScience}">
     <div class="container-all">
       <div class="header">
@@ -1351,6 +1380,10 @@
         <a (click)="_toggleWelfareModal()" 
         (keypress.enter)="_toggleWelfareModal()">
         <h2 style="color: #4F81BD">XVI Seminário de Seguridade Social e Trabalho: Trabalho Decente e Democracia - Mais informações</h2>
+        </a>
+        <a (click)="_toggleBeingModal()" 
+        (keypress.enter)="_toggleBeingModal()">
+        <h2 style="color: #4F81BD">EXPOSIÇÃO 'A ESSÊNCIA DO SER</h2>
         </a>
       </div>
   </div>

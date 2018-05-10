@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
     private modalTalkingCircle: boolean;
     private modalExtension: boolean;
     private modalWelfare: boolean;
+    private modalBeing: boolean;
 
     public umaNoticia: News;
 
@@ -81,6 +82,7 @@ export class AppComponent implements OnInit {
         this.modalTalkingCircle = false;
         this.modalExtension = false;
         this.modalWelfare = false;
+        this.modalBeing = false;
         this.modalPrazo = true;
 
         /** REGISTER FORM */
@@ -380,6 +382,10 @@ export class AppComponent implements OnInit {
 
     private _toggleWelfareModal() {
         this.modalWelfare = !this.modalWelfare;
+    }
+
+    private _toggleBeingModal() {
+        this.modalBeing = !this.modalBeing;
     }
 
     private _toggleUmaNoticiaModal(id?: number) {
