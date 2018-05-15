@@ -125,11 +125,10 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-md-12">
         <nav class="main">
           <a class="blue" href="https://docs.google.com/document/d/1wdtHDS5PEy-safMX-DwzWBhEikMLtzQHRSP9jHB00cQ/edit">Programação</a>
           <a class="blue" (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">Subeventos</a>
-          <a class="blue" (click)="_gotTo('#s-downloads')" (keypress.enter)="_gotTo('#s-downloads')">Downloads</a>
           <a class="red" (click)="_gotTo('#s-inscription')" (keypress.enter)="_gotTo('#s-inscription')">Inscreva-se</a>
           <a class="yellow" href="http://sigeva.ccsa.ufrn.br/login">Acessar</a>
         </nav>
@@ -880,7 +879,7 @@
 <div class="modal-news" [ngClass]="{'open': modalPrazo}">
     <div class="container-all">
       <div class="header">
-          INSTRUÇÕES PARA INSCRIÇÃO NAS ATIVIDADES DO SEMINÁRIO
+         AVISO 
         <a (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()">FECHAR</a>
       </div>
       <div class="container-modal">
