@@ -539,7 +539,7 @@ var AppComponent = (function () {
         this.modalExtension = false;
         this.modalWelfare = false;
         this.modalBeing = false;
-        this.modalPrazo = true;
+        this.modalPrazo = false;
         /** REGISTER FORM */
         this._registerForm = this._formBuilder.group({
             name: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* Validators */].required])],
