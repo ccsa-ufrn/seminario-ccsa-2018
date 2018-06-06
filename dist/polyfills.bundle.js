@@ -52,13 +52,13 @@ module.exports = __webpack_require__(58) ? function (object, key, value) {
 
 var META = __webpack_require__(145)('meta');
 var isObject = __webpack_require__(20);
-var has = __webpack_require__(34);
+var has = __webpack_require__(37);
 var setDesc = __webpack_require__(49).f;
 var id = 0;
 var isExtensible = Object.isExtensible || function () {
   return true;
 };
-var FREEZE = !__webpack_require__(37)(function () {
+var FREEZE = !__webpack_require__(36)(function () {
   return isExtensible(Object.preventExtensions({}));
 });
 var setMeta = function (it) {
@@ -231,7 +231,7 @@ var meta = __webpack_require__(143);
 var forOf = __webpack_require__(141);
 var anInstance = __webpack_require__(214);
 var isObject = __webpack_require__(20);
-var fails = __webpack_require__(37);
+var fails = __webpack_require__(36);
 var $iterDetect = __webpack_require__(577);
 var setToStringTag = __webpack_require__(222);
 var inheritIfRequired = __webpack_require__(571);
@@ -407,7 +407,7 @@ module.exports = function (target, src, safe) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var def = __webpack_require__(49).f;
-var has = __webpack_require__(34);
+var has = __webpack_require__(37);
 var TAG = __webpack_require__(39)('toStringTag');
 
 module.exports = function (it, tag, stat) {
@@ -744,7 +744,7 @@ module.exports = function (it) {
 /***/ 333:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(58) && !__webpack_require__(37)(function () {
+module.exports = !__webpack_require__(58) && !__webpack_require__(36)(function () {
   return Object.defineProperty(__webpack_require__(332)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -783,7 +783,7 @@ exports.f = Object.getOwnPropertySymbols;
 /***/ 336:
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(34);
+var has = __webpack_require__(37);
 var toIObject = __webpack_require__(225);
 var arrayIndexOf = __webpack_require__(564)(false);
 var IE_PROTO = __webpack_require__(223)('IE_PROTO');
@@ -858,17 +858,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ 34:
-/***/ (function(module, exports) {
-
-var hasOwnProperty = {}.hasOwnProperty;
-module.exports = function (it, key) {
-  return hasOwnProperty.call(it, key);
-};
-
-
-/***/ }),
-
 /***/ 340:
 /***/ (function(module, exports) {
 
@@ -882,7 +871,7 @@ module.exports = function (it) {
 
 /***/ }),
 
-/***/ 37:
+/***/ 36:
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -891,6 +880,17 @@ module.exports = function (exec) {
   } catch (e) {
     return true;
   }
+};
+
+
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, exports) {
+
+var hasOwnProperty = {}.hasOwnProperty;
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
 };
 
 
@@ -1037,7 +1037,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * Needed for: All but Chrome, Firefox, Edge, IE11 and Safari 10
  */
 // import 'intl';  // Run `npm install --save intl`.
-//# sourceMappingURL=/home/luccas/Projetos/seminario-ccsa-2018/src/polyfills.js.map
+//# sourceMappingURL=/home/ccsa/seminario-2018-2/src/polyfills.js.map
 
 /***/ }),
 
@@ -1258,7 +1258,7 @@ var isObject = __webpack_require__(20);
 var anInstance = __webpack_require__(214);
 var forOf = __webpack_require__(141);
 var createArrayMethod = __webpack_require__(329);
-var $has = __webpack_require__(34);
+var $has = __webpack_require__(37);
 var validate = __webpack_require__(92);
 var arrayFind = createArrayMethod(5);
 var arrayFindIndex = createArrayMethod(6);
@@ -1442,7 +1442,6 @@ var LIBRARY = __webpack_require__(579);
 var $export = __webpack_require__(17);
 var redefine = __webpack_require__(91);
 var hide = __webpack_require__(142);
-var has = __webpack_require__(34);
 var Iterators = __webpack_require__(219);
 var $iterCreate = __webpack_require__(334);
 var setToStringTag = __webpack_require__(222);
@@ -1469,7 +1468,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   var VALUES_BUG = false;
   var proto = Base.prototype;
   var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = (!BUGGY && $native) || getMethod(DEFAULT);
+  var $default = $native || getMethod(DEFAULT);
   var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
   var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
   var methods, key, IteratorPrototype;
@@ -1480,7 +1479,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
       // Set @@toStringTag to native iterators
       setToStringTag(IteratorPrototype, TAG, true);
       // fix for some old engines
-      if (!LIBRARY && !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
+      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
     }
   }
   // fix Array#{values, @@iterator}.name in V8 / FF
@@ -1562,7 +1561,7 @@ module.exports = false;
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(37)(function () {
+module.exports = !__webpack_require__(36)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -1583,7 +1582,7 @@ var IObject = __webpack_require__(218);
 var $assign = Object.assign;
 
 // should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(37)(function () {
+module.exports = !$assign || __webpack_require__(36)(function () {
   var A = {};
   var B = {};
   // eslint-disable-next-line no-undef
@@ -1749,7 +1748,7 @@ var anObject = __webpack_require__(7);
 var rApply = (__webpack_require__(26).Reflect || {}).apply;
 var fApply = Function.apply;
 // MS Edge argumentsList argument is optional
-$export($export.S + $export.F * !__webpack_require__(37)(function () {
+$export($export.S + $export.F * !__webpack_require__(36)(function () {
   rApply(function () { /* empty */ });
 }), 'Reflect', {
   apply: function apply(target, thisArgument, argumentsList) {
@@ -1771,7 +1770,7 @@ var create = __webpack_require__(220);
 var aFunction = __webpack_require__(87);
 var anObject = __webpack_require__(7);
 var isObject = __webpack_require__(20);
-var fails = __webpack_require__(37);
+var fails = __webpack_require__(36);
 var bind = __webpack_require__(567);
 var rConstruct = (__webpack_require__(26).Reflect || {}).construct;
 
@@ -1820,7 +1819,7 @@ $export($export.S + $export.F * (NEW_TARGET_BUG || ARGS_BUG), 'Reflect', {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(34);
+var has = __webpack_require__(37);
 var toObject = __webpack_require__(227);
 var IE_PROTO = __webpack_require__(223)('IE_PROTO');
 var ObjectProto = Object.prototype;
@@ -1846,7 +1845,7 @@ var anObject = __webpack_require__(7);
 var toPrimitive = __webpack_require__(228);
 
 // MS Edge has broken Reflect.defineProperty - throwing instead of returning false
-$export($export.S + $export.F * __webpack_require__(37)(function () {
+$export($export.S + $export.F * __webpack_require__(36)(function () {
   // eslint-disable-next-line no-undef
   Reflect.defineProperty(dP.f({}, 1, { value: 1 }), 1, { value: 2 });
 }), 'Reflect', {
@@ -1958,7 +1957,7 @@ $export($export.S, 'Reflect', {
 // 26.1.6 Reflect.get(target, propertyKey [, receiver])
 var gOPD = __webpack_require__(90);
 var getPrototypeOf = __webpack_require__(59);
-var has = __webpack_require__(34);
+var has = __webpack_require__(37);
 var $export = __webpack_require__(17);
 var isObject = __webpack_require__(20);
 var anObject = __webpack_require__(7);
@@ -2076,7 +2075,7 @@ if (setProto) $export($export.S, 'Reflect', {
 var dP = __webpack_require__(49);
 var gOPD = __webpack_require__(90);
 var getPrototypeOf = __webpack_require__(59);
-var has = __webpack_require__(34);
+var has = __webpack_require__(37);
 var $export = __webpack_require__(17);
 var createDesc = __webpack_require__(144);
 var anObject = __webpack_require__(7);
@@ -2140,7 +2139,7 @@ var meta = __webpack_require__(143);
 var assign = __webpack_require__(580);
 var weak = __webpack_require__(569);
 var isObject = __webpack_require__(20);
-var fails = __webpack_require__(37);
+var fails = __webpack_require__(36);
 var validate = __webpack_require__(92);
 var WEAK_MAP = 'WeakMap';
 var getWeak = meta.getWeak;
@@ -2592,7 +2591,7 @@ module.exports = function (it) {
 /***/ 88:
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.3' };
+var core = module.exports = { version: '2.5.4' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -2632,7 +2631,7 @@ var pIE = __webpack_require__(338);
 var createDesc = __webpack_require__(144);
 var toIObject = __webpack_require__(225);
 var toPrimitive = __webpack_require__(228);
-var has = __webpack_require__(34);
+var has = __webpack_require__(37);
 var IE8_DOM_DEFINE = __webpack_require__(333);
 var gOPD = Object.getOwnPropertyDescriptor;
 
@@ -2653,7 +2652,7 @@ exports.f = __webpack_require__(58) ? gOPD : function getOwnPropertyDescriptor(O
 
 var global = __webpack_require__(26);
 var hide = __webpack_require__(142);
-var has = __webpack_require__(34);
+var has = __webpack_require__(37);
 var SRC = __webpack_require__(145)('src');
 var TO_STRING = 'toString';
 var $toString = Function[TO_STRING];
