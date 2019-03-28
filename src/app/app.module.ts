@@ -6,15 +6,18 @@ import { GeralService } from './geral.service';
 import { AppComponent } from './app.component';
 import { CarouselComponent } from './carousel';
 import { CarouselVideosComponent, SafePipe } from './carousel-videos';
+import { MainComponent } from './main/main.component';
+import { AnaisComponent } from './anais/anais.component';
+import { AppRoutingModule } from "app/app.routing.module";
 
 @NgModule({
   declarations: [
     AppComponent, CarouselComponent,
-    CarouselVideosComponent, SafePipe
+    CarouselVideosComponent, SafePipe, MainComponent, AnaisComponent
   ],
   imports: [
     BrowserModule, HttpModule, FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule, AppRoutingModule
   ],
   providers: [GeralService],
   bootstrap: [AppComponent]
