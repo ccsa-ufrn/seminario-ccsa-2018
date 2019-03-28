@@ -49,10 +49,10 @@
                         NOTÍCIAS
                 </a>
 
-        <!-- <a class="login" tabindex="0" href="http://www.seminario2016.ccsa.ufrn.br" target="_blank" style="cursor:pointer;float: right; display: block; padding: 10px; padding-top: 14px;
+        <a class="login" tabindex="0" routerLink="/anais"  style="cursor:pointer;float: right; display: block; padding: 10px; padding-top: 14px;
                     height: 40px; margin-right: 10px;">
-                        ANAIS 2016
-                </a> -->
+                        ANAIS 2018
+                </a>
 
         <!-- <a class="login" tabindex="0" (click)="_toggleProgramacaoModal()" (keypress.enter)="_toggleProgramacaoModal()" style="cursor:pointer;float: right; display: block; padding: 10px; padding-top: 14px;
                     height: 40px; margin-right: 10px;">
@@ -96,398 +96,8 @@
   </div>
 </header>
 
-<main #mainContainer>
+<router-outlet></router-outlet>
 
-  <section class="logo">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <picture>
-            <!-- greater size to lower size -->
-            <source srcset="assets/ng2/marca.png" media="(min-width: 768px)">
-            <source srcset="assets/ng2/marca.png" media="(min-width: 0px)">
-            <img width="100%" alt="Marca - Seminário de Pesquisa do CCSA">
-          </picture>
-          <h2>14 a 18 de maio de 2018</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="pattern3"></div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <nav class="main">
-          <a class="blue" href="https://docs.google.com/document/d/1wdtHDS5PEy-safMX-DwzWBhEikMLtzQHRSP9jHB00cQ/edit">Programação</a>
-          <a class="blue" (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">Subeventos</a>
-          <a class="red" (click)="_gotTo('#s-inscription')" (keypress.enter)="_gotTo('#s-inscription')">Inscreva-se</a>
-          <a class="yellow" href="http://sigeva.ccsa.ufrn.br/login">Acessar</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <div class="container ">
-    <div class="row">
-      <div class="col-12 hidden-md-down">
-        <div class="pattern3"></div>
-      </div>
-    </div>
-  </div>
-
-  <section class="presentation">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <b>O 23º Seminário de Pesquisa do CCSA/UFRN – Desenvolvimento e Democracia no Brasil: do que estamos falando? – </b> evidencia a preocupação do Centro de Ciências Sociais
-          Aplicadas em consolidar um espaço para discussão e socialização do conhecimento produzido nas diferentes áreas
-          das ciências sociais aplicadas (Direito, Economia, Administração, Serviço Social, Ciências Contábeis, Turismo e
-          Biblioteconomia)
-        </div>
-        <div class="col-md-6">
-          Tem como objetivo tornar acessível à comunidade universitária a produção científica existente no CCSA por meio da divulgação
-          dos trabalhos apresentados; estimular a comunidade acadêmica do CCSA para a prática da pesquisa; contribuir para
-          o desenvolvimento da pesquisa e da reflexão teórico-metodológica no campo das Ciências Sociais Aplicadas; abrir
-          espaço para interlocução com outras áreas do conhecimento.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="pattern3"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <section class="news">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>NOVIDADES</h1>
-        </div>
-      </div>
-
-      <carousel-videos></carousel-videos>
-
-    </div>
-  </section>
-
-  <section class="news">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>NOTÍCIAS</h1>
-          <a (click)="_toggleNewsModal()" (keyup.enter)="_toggleNewsModal()" class="more-news">TODAS AS NOTÍCIAS</a>
-        </div>
-      </div>
-
-      <carousel (openModal)="abrirUmaNoticia($event)" ></carousel>
-
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="pattern2"></div>
-      </div>
-    </div>
-  </div> -->
-
-  <section class="downloads">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 id="s-downloads">DOWNLOADS</h1>
-          <nav>
-            <a href="assets/ng2/download/normas.pdf" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_01.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_01_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Normas
-            </a>
-            <a href="assets/ng2/download/XXIII SPCCSA template.poster.zip" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Template para Pôster
-            </a>
-            <a href="assets/ng2/download/XXIII SPCCSA template.artigo.zip" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Template para Artigo
-            </a>
-            <a href="assets/ng2/download/XXIII SPCCSA template.casoensino.zip" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Template para Casos para Ensino
-            </a>
-            <a href="assets/ng2/download/credits/creditoadministracao.pdf" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Créditos para Administração
-            </a>
-            <a href="assets/ng2/download/credits/creaditocontabeis.pdf" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Créditos para Ciências Contábeis
-            </a>
-            <a href="assets/ng2/download/credits/creaditocienciaseconomicas.pdf" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Créditos para Ciências Econômicas
-            </a>
-            <a href="assets/ng2/download/credits/creditodireito.pdf" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Créditos para Direito
-            </a>
-            <a href="assets/ng2/download/credits/creditoturismo.pdf" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Créditos para Turismo
-            </a>
-            <a href="assets/ng2/download/credits/creditobiblioteconomia.pdf" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Créditos para Biblioteconomia
-            </a>
-            <a href="assets/ng2/download/credits/creditoservicosocial.pdf" target="_blank">
-              <picture>
-                <!-- greater size to lower size -->
-                <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
-                <source srcset="assets/ng2/download_02_mobile.png" media="(min-width: 0px)">
-                <img alt="Marca - Seminário de Pesquisa do CCSA">
-              </picture>
-              Créditos para Serviço Social
-            </a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="pattern1"></div>
-      </div>
-    </div>
-  </div>
-
-  <section class="thematic-groups">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1><span>GRUPOS</span> TEMÁTICOS</h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="main">
-            <li *ngFor="let i of _gtsleft;let k2 = index;">
-              <div class="ball"></div>
-              <span>{{ i.name }}</span>
-              <ul>
-                <li *ngFor="let j of i.tgs; let k = index;">
-                  <a (click)="openSub('div'+ k +'left'+ k2)" (keypress.enter)="openSub('div'+ k +'left'+ k2)">{{ j.name }}</a>
-                  <div id="div{{ k }}left{{ k2 }}">
-                    <p class="coordinators">{{ j.coordinators }}</p>
-                    <p class="description">{{ j.syllabus }}</p>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-md-6">
-          <ul class="main">
-            <li *ngFor="let i of _gtsright; let k2 = index;">
-              <div class="ball"></div>
-              <span>{{ i.name }}</span>
-              <ul>
-                <li *ngFor="let j of i.tgs; let k = index;">
-                  <a (click)="openSub('div'+ k +'right'+ k2)" (keypress.enter)="openSub('div'+ k +'left'+ k2)">{{ j.name }}</a>
-                  <div id="div{{ k }}right{{ k2 }}">
-                    <p class="coordinators">{{ j.coordinators }}</p>
-                    <p class="description">{{ j.syllabus }}</p>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end / section.thematic-group -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="pattern3"></div>
-      </div>
-    </div>
-  </div>
-
-  <section class="register" style="margin: 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 id="s-inscription">INSCRIÇÕES <span>ATÉ 12 DE MAIO</span></h1>
-          <p>A partir de sua 23º edição o <strong>Seminário de Pesquisa do CCSA</strong> utilizará a plataforma Sigeva (Sistema de Gestão de Eventos Acadêmicos), desenvolvida
-          para suportar eventos do CCSA. Para efetuar inscrição no evento é necessário criar uma conta na plataforma que pode ser acessada pelo endereço
-          <a href="http://sigeva.ccsa.ufrn.br" target="_blank">http://sigeva.ccsa.ufrn.br</a>.</p>
-          <p>ATENÇÃO: Após criar uma conta no Sigeva deve-se fazer a inscrição na página do evento, que pode ser facilmente localizada na página inicial da plataforma. O usuário que não se inscrever no Sigeva e no evento não poderá ser citado como coautor em artigos, posteres e casos para ensino assim como não poderá ser inscrito como expositor em oficinas ou minicursos</p>
-          <a href="http://sigeva.ccsa.ufrn.br" class="sigeva-btn">Acessar o Sigeva</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="pattern3"></div>
-      </div>
-    </div>
-  </div>
-    <section class="contact" style="margin:0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 id="s-comment">CONTATO</h1>
-
-          <form [formGroup]="_contactForm" (ngSubmit)="_sendMessage($event)" novalidate>
-            <div class="form-control">
-              <label>NOME:</label>
-              <input placeholder="Nome Completo" formControlName="name">
-
-              <div *ngIf="_contactForm.get('name').errors && (_contactForm.get('name').dirty || _contactForm.get('name').touched)">
-                <p [hidden]="!_contactForm.get('name').hasError('required')">É obrigatório</p>
-              </div>
-            </div>
-
-            <div class="form-control">
-              <label>EMAIL:</label>
-              <input placeholder="Email" formControlName="mail">
-
-              <div *ngIf="_contactForm.get('mail').errors && (_contactForm.get('mail').dirty || _contactForm.get('mail').touched)">
-                <p [hidden]="!_contactForm.get('mail').hasError('required')">É obrigatório</p>
-              </div>
-            </div>
-
-            <div class="form-control">
-              <label>ASSUNTO:</label>
-              <input placeholder="Assunto" formControlName="subject">
-
-              <div *ngIf="_contactForm.get('subject').errors && (_contactForm.get('subject').dirty || _contactForm.get('subject').touched)">
-                <p [hidden]="!_contactForm.get('subject').hasError('required')">É obrigatório</p>
-              </div>
-            </div>
-
-            <div class="form-control">
-              <label>MENSAGEM:</label>
-              <textarea placeholder="Mensagem" formControlName="message"></textarea>
-
-              <div *ngIf="_contactForm.get('message').errors && (_contactForm.get('message').dirty || _contactForm.get('message').touched)">
-                <p [hidden]="!_contactForm.get('message').hasError('required')">É obrigatório</p>
-              </div>
-            </div>
-
-            <button type="submit">ENVIAR</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="support">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="support-container">
-            <div class="item">
-              <h1>REALIZAÇÃO</h1>
-              <div class="support-container">
-                <img src="assets/ng2/ufrn.png">
-                <img src="assets/ng2/ccsa.png">
-              </div>
-            </div>
-            <div class="item">
-              <h1>APOIO</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end / support -->
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          ISSN 1808 6381 - <a href="https://ccsa-ufrn.github.io/" target="_black">ATCCSA</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</main>
 
 <div class="modal-news" [ngClass]="{'open': _isNewsModalOpen}">
   <div class="container-all">
@@ -876,18 +486,18 @@
   </div>
 </div>
 
-<div class="modal-news" [ngClass]="{'open': modalPrazo}">
+<!-- <div class="modal-news" [ngClass]="{'open': modalPrazo}">
     <div class="container-all">
       <div class="header">
-         ATENÇÃO 
+         ATENÇÃO
         <a (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()">FECHAR</a>
       </div>
       <div class="container-modal">
         <p>Os certificados de participação no seminário e em atividades, assim como os certificados de apresentação de trabalhos no 23º Seminário estarão disponíveis para acesso em até 30 dias após o encerramento do evento, ou seja, até 17 de junho.</p>
       </div>
     </div>
-  </div>
-  
+  </div> -->
+
 <div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalWelfare}">
     <div class="container-all">
       <div class="header">
@@ -955,7 +565,7 @@
           <br/>
           <h3>16/05</h3>
           <ul>
-            <li>09h:30 Oficina: Metodologias de Ensino para a Inclusão  
+            <li>09h:30 Oficina: Metodologias de Ensino para a Inclusão 
               <ol>
                 <li><strong>Mediador: </strong>CAENE</li>
                 <li><strong>Público alvo: </strong>Professores dos cursos de Graduação do CCSA.</li>
@@ -963,7 +573,7 @@
             </li>
             <li>15h:30 Oficina; Diálogos sobre Extensão:  Avaliando e Planejando a Extensão do CCSA
               <ol>
-                <li><strong>Mediadora: </strong> <strong>Pamela de Medeiros Brandão</strong>/Assessora Acadêmica do CCSA e <strong>Telma Elita</strong>(Ténica em Assuntos Estudantis do Núcleo de Apoio ao Discente NADis)</li>                
+                <li><strong>Mediadora: </strong> <strong>Pamela de Medeiros Brandão</strong>/Assessora Acadêmica do CCSA e <strong>Telma Elita</strong>(Ténica em Assuntos Estudantis do Núcleo de Apoio ao Discente NADis)</li>
                 <li><strong>Público alvo: </strong>Atividade direcionada a todos os professores e alunos envolvidos em ações de extensão no CCSA..</li>
               </ol>
             </li>
@@ -1025,7 +635,7 @@
                 <li>Autor presente: Jodrian Freitas</li>
               </ol>
             </li>
-            <li><strong>O OLHAR DO RESIDENTE: TEORIAS E CASOS NA GESTÃO DO TURISMO</strong> - Auditório 2 Nepsa 2              
+            <li><strong>O OLHAR DO RESIDENTE: TEORIAS E CASOS NA GESTÃO DO TURISMO</strong> - Auditório 2 Nepsa 2
               <ol>
                 <li>Autores: Marcelo Milito, Sérgio Marques e Mayara Farias</li>
               </ol>
@@ -1045,7 +655,7 @@
                 <li>Eliana Andrade da Silva</li>
               </ol>
             </li>
-            <li><strong>DENÚNCIA ANÔNIMA: </strong> instrumento de proteção de direitos fundamentais no Brasil", 2017 
+            <li><strong>DENÚNCIA ANÔNIMA: </strong> instrumento de proteção de direitos fundamentais no Brasil", 2017
               <ol>
                 <li>Morton  Medeiros </li>
               </ol>
@@ -1066,11 +676,11 @@
               </ol>
             <li><strong>REPOSITÓRIOS DIGITAIS: teoria e prática</strong>
               <ol>
-                <li>Autores e Organizadores: Vechiato, 
-                  Fernando Luiz, Marques, Clediane de Araujo Guedes, 
-                  Koshiyama, Débora Costa Araújo Di Giacomo,  Moura, 
-                  Elisângela Alves de, Torino, Emanuelle, aia, Maria 
-                  Aniolly Queiroz, Marques, Marques, Tércia Maria 
+                <li>Autores e Organizadores: Vechiato,
+                  Fernando Luiz, Marques, Clediane de Araujo Guedes,
+                  Koshiyama, Débora Costa Araújo Di Giacomo,  Moura,
+                  Elisângela Alves de, Torino, Emanuelle, aia, Maria
+                  Aniolly Queiroz, Marques, Marques, Tércia Maria
                   Souza de Moura</li>
               </ol>
             </li>
@@ -1132,7 +742,7 @@
               </ol>
             </li>
           </ul>
-          </div>  
+          </div>
           <br/>
 
       </div>
@@ -1152,15 +762,15 @@
           <h3>1ª Dia - 14/05</h3>
             <ul>
               <li><strong>8h:00</strong> Abertura</li>
-              <li><strong>8h:30 </strong> Lançamento do Livro "Feminismo, Diversidade Sexual e Serviço Social" - Profª Drª. Mirla Cisne (UERN) e Profª. Drª. Silvana Mara (UFRN)</li> 
-              <li><strong>9h:00</strong> Palestra - Crítica a noção de gênero, feminismo materialista e marxismo: questões polêmicas e desafios  
+              <li><strong>8h:30 </strong> Lançamento do Livro "Feminismo, Diversidade Sexual e Serviço Social" - Profª Drª. Mirla Cisne (UERN) e Profª. Drª. Silvana Mara (UFRN)</li>
+              <li><strong>9h:00</strong> Palestra - Crítica a noção de gênero, feminismo materialista e marxismo: questões polêmicas e desafios
                 <ol>
                   <li>Palestrantes: ProfªDrª Janaiky Almeida (UFERSA) e ProfªDrª Mirla Cisne (UERN);</li>
                   <li><strong>Coordenação:</strong> ProfªDrª Andréa Lima (UFRN) e Fernanda Nascimento (Bolsista IC)</li>
                 </ol>
               </li>
               <li><strong>11h:00</strong> Debate</li>
-              <li><strong>14h:00</strong> Palestra - Crítica a noção de gênero, feminismo materialista e marxismo: questões polêmicas e desafios                
+              <li><strong>14h:00</strong> Palestra - Crítica a noção de gênero, feminismo materialista e marxismo: questões polêmicas e desafios
                 <ol>
                   <li>Palestrantes: Profª. Drª Anotinette Brito (UFRN) e Drª Verônica Ferreira (SOS CORPO e AMB) </li>
                   <li><strong>Coordenação:</strong> ProfªDrª Ilka Lima e Lenny Grillo (Bolsista IC)</li>
@@ -1209,9 +819,9 @@
                     Sala H2 – Setor V</li>
               </ol>
             </li>
-            <li><strong>19:30 </strong> Cerimônia de Abertura 
+            <li><strong>19:30 </strong> Cerimônia de Abertura
             <li><strong>20:00</strong> Conferência - Construindo capacidades institucionais de gestão na Administração Pública: limites e
-              possibilidades 
+              possibilidades
               <ol>
                 <li>Conferencista: Alexandre de Avila Gomide (Diretor de
                     Estudos e Políticas do Estado, Instituições e Democra-
@@ -1223,7 +833,7 @@
           <br/>
           <h3>2ª Dia - 17/05</h3>
           <ul>
-            <li><strong>9h:30</strong> Mesa-Redonda - Laboratórios de Governo e Inovação na Gestão Pública 
+            <li><strong>9h:30</strong> Mesa-Redonda - Laboratórios de Governo e Inovação na Gestão Pública
               <ol>
                 <li>Palestrantes: Marco Bruno Miranda Clementino
                     (Diretor do Foro da Justiça Federal no Rio
@@ -1235,7 +845,7 @@
                 <li><strong>Local:</strong> Auditório do NEPSA I</li>
               </ol>
             </li>
-            <li><strong>15:30</strong> Conferência de Encerramento - Novos dilemas e alternativas para a Gestão Pública 
+            <li><strong>15:30</strong> Conferência de Encerramento - Novos dilemas e alternativas para a Gestão Pública
               <ol>
                 <li>Conferencista: João Mendes da Rocha Neto
                     (Professor do Programa de Pós-graduação em
@@ -1267,7 +877,7 @@
             pela professora Dalvanir Avelino
           </p>
           <p>
-            A exposição fotográfica A ESSÊNCIA DO SER capta a beleza, fazendo com que nos despertem os sentidos e 
+            A exposição fotográfica A ESSÊNCIA DO SER capta a beleza, fazendo com que nos despertem os sentidos e
             as emoções mais profundas em termos de reflexão sobre como deixamos o essencial da vida passar, por vezes,
             despercebidos em meio às atribuições do cotidiano. Neste sentido é notável o olhar para a diversidade da fotógrafa
             Dalvanir Avelino, cujo respeito ao outra e a solidariedade humana, próprias da sua essência, transparecem em seus registros.
@@ -1290,8 +900,8 @@
           <h3>1ª Dia - 15/05</h3>
           <ul>
             <li><strong>16:00 – Café de boas-vindas – Sala de reunião setor V</strong></li>
-            <p>Reunião com a Profa Henriette Ferreira Gomes (UFBA) e a Coordenação do Curso de Graduação em Biblioteconomia, 
-              Coordenação do Mestrado Profissional em Gestão da Informação e do Conhecimento e com os membros do Grupo de 
+            <p>Reunião com a Profa Henriette Ferreira Gomes (UFBA) e a Coordenação do Curso de Graduação em Biblioteconomia,
+              Coordenação do Mestrado Profissional em Gestão da Informação e do Conhecimento e com os membros do Grupo de
               Pesquisa “Informação na Sociedade Contemporânea”.</p>
           </ul>
           <h3>2ª Dia - 16/05</h3>
@@ -1328,7 +938,7 @@
           <ul>
             <li><strong>09h30 às 11h30:</strong> Grupos Temáticos</li>
             <li><strong>13h às 15h: </strong>Minicursos</li>
-            <li><strong>15h30: </strong>Painel: “Pesquisas em Gestão da Informação e do Conhecimento” 
+            <li><strong>15h30: </strong>Painel: “Pesquisas em Gestão da Informação e do Conhecimento”
               <ol>
                 <li>Coordenadora: Profa. Dra. Andrea Vasconcelos Carvalho / Prof. Dr. Pedro Alves Barbosa Neto(PPGIC/UFRN)</li>
               </ol>
@@ -1344,39 +954,39 @@
 <div class="modal-news" [ngClass]="{'open': modalColoquio}">
     <div class="container-all">
       <div class="header">
-         Subeventos 
+         Subeventos
         <a (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">FECHAR</a>
       </div>
       <div class="container-modal">
-        <a (click)="_toggleInfoScienceModal()" 
+        <a (click)="_toggleInfoScienceModal()"
         (keypress.enter)="_toggleInfoScienceModal()">
         <h2 style="color: #4F81BD">Coloquio de Ciência da Informação - Tema: Protagonismo Social da Informação - Mais informações</h2>
         </a>
-        <a (click)="_togglePublicManagementModal()" 
+        <a (click)="_togglePublicManagementModal()"
         (keypress.enter)="_togglePublicManagementModal()">
         <h2 style="color: #4F81BD">IV COLÓQUIO SOBRE GESTÃO PÚBLICA - Mais informações</h2>
         </a>
-        <a (click)="_toggleFeminismModal()" 
+        <a (click)="_toggleFeminismModal()"
         (keypress.enter)="_toggleFeminismModal()">
         <h2 style="color: #4F81BD">I COLÓQUIO FEMINISMO MATERIALISTA E MARXISMO - Mais informações</h2>
         </a>
-        <a (click)="_toggleInternationalModal()" 
+        <a (click)="_toggleInternationalModal()"
         (keypress.enter)="_toggleInternationalModal()">
         <h2 style="color: #4F81BD">Colóquio Internacional - Agricultura camponesa, segurança alimentar e nutricional e resistências: interlocuções Brasil, Argentina, Colômbia - Mais informações</h2>
         </a>
-        <a (click)="_toggleTalkingCircleModal()" 
+        <a (click)="_toggleTalkingCircleModal()"
         (keypress.enter)="_toggleTalkingCircleModal()">
         <h2 style="color: #4F81BD">EVENTO RODA DE CONVERSA  - ANO  V - Mais informações</h2>
         </a>
-        <a (click)="_toggleExtensionModal()" 
+        <a (click)="_toggleExtensionModal()"
         (keypress.enter)="_toggleExtensionModal()">
         <h2 style="color: #4F81BD"> VII Mostra de Extensão - Mais informações</h2>
         </a>
-        <a (click)="_toggleWelfareModal()" 
+        <a (click)="_toggleWelfareModal()"
         (keypress.enter)="_toggleWelfareModal()">
         <h2 style="color: #4F81BD">XVI Seminário de Seguridade Social e Trabalho: Trabalho Decente e Democracia - Mais informações</h2>
         </a>
-        <a (click)="_toggleBeingModal()" 
+        <a (click)="_toggleBeingModal()"
         (keypress.enter)="_toggleBeingModal()">
         <h2 style="color: #4F81BD">EXPOSIÇÃO 'A ESSÊNCIA DO SER</h2>
         </a>

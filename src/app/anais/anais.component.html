@@ -1,0 +1,48 @@
+<div class="full">
+  <section class="logo">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <picture>
+            <source srcset="assets/ng2/marca.png" media="(min-width: 768px)">
+            <source srcset="assets/ng2/marca.png" media="(min-width: 0px)">
+            <img width="100%" heigth="150%" alt="Marca - Seminário de Pesquisa do CCSA">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="">
+      <h2 class="blue center">ANAIS DO XXIV SEMINÁRIO DE PESQUISA DO CCSA - ISSN 1808 6381</h2>
+    </div>
+  </section>
+
+  <!-- <h2 class="blue center">EM BREVE...</h2> -->
+
+ <section>
+    <div class="container sub-container" *ngFor="let item of arrayResult;">
+      <div class="header">{{item.name}}</div>
+      <div class="row " *ngFor=" let sub of Submissions">
+        <div class="col-9 info " *ngIf="sub.tg == item.id">
+          <h2 >{{ sub.title}}</h2>
+          <div class='authors' >
+            <h5 align="justify"  *ngFor="let author of sub.authors">{{author.name}}, &nbsp;</h5>
+          </div>
+          <p >{{sub.abstract}}</p>
+
+        </div>
+        <div class="col-3 downloads" *ngIf="sub.tg == item.id">
+          <div *ngFor="let file of sub.files">
+            <div *ngIf="file.extension != 'pdf'">
+              <a href="assets/{{sub.entity}}-named/{{file._id}}.{{file.extension}}"><img  src="assets/downloadicon.png" height="124px" alt=""></a>
+              <span style="font-size:20px;">Baixar Documento</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
